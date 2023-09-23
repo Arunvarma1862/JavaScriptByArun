@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+}
+
+h1{
+    background-color: #1e9292;
+    margin: 10px 10px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+
+}
+h1:hover{
+    background-color: antiquewhite;
+    color: orange;
+    font-size: 48px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3e5379;
+    overflow: hidden;
+}
+li a{
+     color: wheat;
+     text-decoration: none;
+     border-right: 1px solid black;
+     float: left;
+     padding: 10px 16px;
+     min-width: 100px;
+     text-align: center;
+     transition: all 0.5s ease-in;
+}
+
+li:hover a{
+    background-color: blue;
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    margin: 0;
+}
+h1{
+   margin: 10px 10px;
+   background-color: rgb(30, 196, 71);
+   color: blue;
+   padding: 15px;
+   text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2d2d2d;
+    overflow: hidden;
+}
+li a{
+    color: aquamarine;
+    text-decoration: none;
+    border-right: 1px solid black;
+    float: left;
+    padding: 10px 16px;
+    min-width: 100px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+li a:hover{
+    background-color: blanchedalmond;
+    color: blue;
+
+} */

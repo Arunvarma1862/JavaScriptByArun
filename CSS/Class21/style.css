@@ -1,0 +1,98 @@
+h1{
+    margin: 0px;
+    padding: 15px;
+    background-color: blue;
+    color: wheat;
+    text-align: center;
+
+}
+.container{
+    background-color: brown;
+    display: flex;
+    
+    /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    width: 120px; */
+
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-around;
+    justify-content: space-between; */
+
+
+    /* flex-direction: row-reverse;
+    justify-content: flex-start;
+    justify-content: flex-end; */
+
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse; */
+
+    /* height: 400px;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline; */
+
+    /* flex-flow: row wrap-reverse; */
+
+    /* height: 500px; */
+    /* flex-wrap: wrap;
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: space-around;
+    align-content: space-between;
+    align-content: stretch; */
+    
+    /* flex-wrap: wrap; */
+    height: 400px;
+    justify-content: center;
+    align-items: center  ;
+    
+}
+.container div{
+    /* background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    color: rgb(54, 38, 7);
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px; */
+
+}
+#b1{
+/* order: 4; */
+}
+#b2{
+    /* order: 3;  */
+    /* flex-grow: 1; */
+}
+#b3{
+    /* order: 1; */
+    /* flex-shrink: 3; */
+    /* flex-basis: 200px; */
+    /* flex: 10 10 250px; */
+    /* align-self: center;
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: baseline; */
+}
+#b4{
+    /* order: 2; */
+}
+.container img{
+    width: 100px;
+    opacity: 0.7;
+    transition: all 3s;
+    
+}
+.container:hover img{
+    opacity: 1.1;
+}

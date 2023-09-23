@@ -1,0 +1,53 @@
+/* a:link{
+    text-decoration: none;
+      color: yellow;
+   
+}
+a:visted{
+    color: green;
+}
+a:hover{
+    color:red;
+    font-size: 25px;
+} */
+a{
+    text-decoration: none;
+    color: red;
+    margin: 0px 0px;
+}
+a:hover{
+    color: blue;
+    font-size: 30px;
+    margin: -10px;
+
+}
+button:hover{
+    background-color: orange;
+    color: blue;
+    border-radius: 2px;
+}
+button:active{
+    background-color:green;
+    color: yellow;
+}
+/* li:first-child{
+    background-image: linear-gradient(to right, yellow, red);
+}
+li:last-child{
+    background-color: aqua;
+} */
+li{
+    line-height: 30px;
+}
+/* li:nth-child(10){
+    background-color: blue;
+} */
+li:nth-child(odd){
+   background-color: aqua;
+}
+li:nth-child(even){
+    background-color: rgb(183, 160, 219);
+}
+li::before{
+    content: url(bullets/PointerNew.png);
+}

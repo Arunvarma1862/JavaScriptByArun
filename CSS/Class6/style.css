@@ -1,0 +1,50 @@
+
+
+   /* Type-1 */
+/* body{
+    background-color: green;
+    background-color: rgb(100, 100, 255);
+    background-color: #41b141;
+    
+} */
+
+
+/* Type-2 */
+/* body{
+    background: linear-gradient(orange,white,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    background: linear-gradient(skyblue, blue);
+    padding: 10px;
+} */
+
+
+/* Type-3 */
+
+html{
+    background: url(images/small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    margin: 50px;
+    background-color: wheat;
+    padding:10px ;
+   
+}
+/* p{
+    background: linear-gradient(lightgreen, red);
+} */
+
+.data{
+    background: linear-gradient(lightgreen, red);
+    /* background-attachment: fixed;  not  should use this in fixed method */
+   
+}

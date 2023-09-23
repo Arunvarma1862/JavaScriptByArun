@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Teko:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    background-color: blanchedalmond;
+    /* font-family: sans-serif; */
+}
+
+p{
+    /* font-family:permanent mark ; */
+    font-family: Permanent Marker,Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    color:orange ;
+
+}
+a{
+
+    font-family: 'Teko', sans-serif;
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 500;
+}
+h1,h2{
+    font-family: Permanent Marker; 
+    text-decoration: underline;
+}

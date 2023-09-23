@@ -1,0 +1,67 @@
+/* pseudo classes */
+
+
+h1{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 2px;
+}
+h1:hover{
+    background-color: aquamarine;
+    color: red;
+}
+div#paras  p:first-child{
+    color: red;
+}
+
+#links{
+    
+    margin: 5px  ;
+    font-size: 19px;
+    text-align: center;
+}
+
+/* Anchor psuedo classes */
+
+a:link{
+    text-decoration: none;
+    color: yellow;
+}
+a:visited{
+    color: yellow;
+}
+a:hover{
+    color: blue;
+    font-size: 25px;
+    margin-left: -10px;
+}
+a:active{
+    color: green;
+}
+
+/* Special style  */
+
+#special{
+    
+    background-color: green;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#special p{
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    box-shadow: 3px 3px 3px black;
+
+    width: 300px;
+    margin : 20px auto;
+}
+#special:hover p{
+    display: block;
+    
+}

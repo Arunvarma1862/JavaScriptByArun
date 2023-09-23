@@ -1,0 +1,43 @@
+
+    /* Text-Align  */
+
+a{
+    display: block;
+    border: 2px solid red;
+    text-decoration: none;
+    padding: 10px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+   
+}
+p{
+    /* border: 1px solid blue; */
+    /* width: 80px; */
+    text-align: justify;
+    
+}
+/* #p1:nth-child(4) {
+  text-align: center;
+} */
+#p1{
+    text-align: left;
+}
+#p2{
+    text-align: right;
+}
+#p3{
+    text-align: center;
+}
+
+
+/* Float  */
+img{
+    float: left;
+    margin:1%;
+    border: 3px double blue;
+}
+h2{
+    /* clear: left; */
+    clear: both;
+}

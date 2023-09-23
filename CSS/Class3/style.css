@@ -1,0 +1,36 @@
+  body{
+    background-color: orange;
+  }
+h1, h2{
+    /* font-family: sans-serif ; */
+    /* font-family: serif; */
+    /* font-family: Arial; */
+    /* font-family: ink free; */
+    /* font-family: ink free, arial, sans-serif; */
+
+
+    font-family: Arial, sans-serif, ink free ;
+    color: blue;
+    font-weight: lighter;
+    font-size: 2em;
+    font-size: 29px
+
+    /* font size , 1em=16px */
+
+}
+
+p{
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 29px;
+    color: green;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+a{
+    color:brown;
+    font-family: ink free;
+    font-size: 2em;
+    margin-left: 46px;
+    text-decoration: none;
+}

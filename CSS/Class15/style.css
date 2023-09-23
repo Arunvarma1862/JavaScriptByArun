@@ -1,0 +1,41 @@
+h1{
+    background-color: aqua;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+p{
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    color: wheat;
+    line-height: 150px;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+#p2 {
+    /* transform: translateX(50px); */
+    /* transform: translateY(-50px); */
+    /* transform: translate(50px, -92px); */
+
+    /* transform: rotateX(180deg); */
+    /* transform: rotateY(180deg); */
+    /* transform: rotateZ(90deg); */
+    /* transform: rotate(90deg); */
+
+    /* transform: scaleX(1.2); */
+    /* transform: scaleY(1.2); */
+    /* transform: scaleZ(1.2); */
+    /* transform: scale(1.2,1.2); */
+
+    /* transform: skewX(30deg); */
+    /* transform: skewY(40deg); */
+    /* transform: skew(30deg, 40deg); */
+
+    transform: translate(118px ,-134px) rotate(40deg) scale(0.76) skew(40deg);
+    background-color: yellowgreen;
+
+
+}

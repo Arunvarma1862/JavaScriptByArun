@@ -1,0 +1,18 @@
+a{
+    background-color: yellow;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid  blue;
+    width: 60%;
+    color: blue;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+a:hover{
+    color:green;
+    font-size: 30px;
+    /* margin: -5px; */
+}

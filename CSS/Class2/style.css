@@ -1,0 +1,24 @@
+h2{
+    color: yellow;
+    font-size: large;
+}
+
+h1{
+    color: green;
+}
+
+p{
+    color: violet;
+}
+
+
+         /* Id */
+#title{
+    color: blue
+}
+
+
+      /* class */
+.super{
+    color:  orange ;
+}

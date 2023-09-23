@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+    padding: 15px;
+    background-color: blue;
+    text-align: center;
+    /* display: inline;  */
+    /* display: none; */
+}
+p{
+    display: inline;
+}
+span{
+    display: inline;
+
+    border: 1px solid black;
+    width: 200px;
+    display: inline-block;
+}
+#box{
+    position: relative;
+}
+#box img{
+     position: absolute;
+    width: 300px;
+    border: 1px solid orange;
+}
+#pic1{
+    z-index: 1;
+}
+#pic2{
+    top: 70px;
+    left: 40px;
+    z-index: 3;
+}
+#pic3{
+    top: 150px;
+    left: 80px;
+    z-index: 2;
+}

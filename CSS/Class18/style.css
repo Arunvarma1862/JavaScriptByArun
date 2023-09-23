@@ -1,0 +1,101 @@
+h1{
+    margin: 0 0 10px 0;
+    padding: 15px;
+    background-color: rgb(6, 6, 34);
+    color: wheat;
+    text-align: center;
+}
+#container div{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 20px 10px;
+}
+#b1{
+    background-color: antiquewhite;
+    transition: background-color 1s ease, width 1s ease-in;
+}
+#b2{
+    background-color: brown;
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s;
+
+}
+#b3{
+    background-color: orange;
+    transition: all 1s linear;
+    transition-delay: 1s;
+}
+#container:hover #b1{
+    background-color: orange;
+    width: 500px; 
+}
+#container:hover #b2{
+    height: 200px;
+    background-color: white;
+
+}
+#container:hover #b3{
+   
+    background-color: green;
+    transform: scale(1.2) rotate(40deg);
+    margin: 40px; 
+}
+
+  /* profile box */
+
+  #ProBox {
+    position: relative;
+    border: 1px solid black;
+    width: 300px;
+    height: 370px;
+    margin: 20px 15px ;
+    overflow: hidden;
+    
+
+  }
+  #ProBox #ProfilePic{
+    position: absolute;
+    left:-10px;
+    top: -40px;
+    width: 320px;
+    opacity: 0.5;
+    transition: all 1s ease-in;
+  }
+
+  #ProBox #pro_bg{
+    position: absolute;
+    width: 0px;
+    height: 30px;
+    bottom: 0;
+   background-color: black;
+   opacity: 0.8;
+   transition: all 1s ease-in;
+  }
+
+  #ProBox #pro_name{
+    position: absolute;
+    /* bottom: -14px; */
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50px);
+    color: wheat;
+    opacity: 0;
+    transition: all 1s ease-in;
+    transition-delay: 0.5s;
+
+  }
+  #ProBox:hover #ProfilePic{
+    opacity: 1;
+    transform: translateY(-10px) scale(1.2);
+  }
+  #ProBox:hover #pro_bg{
+    width: 300px;
+    /* background-color: blue; */
+    
+  } #ProBox:hover #pro_name{
+    
+    opacity: 1;
+    color: aliceblue;
+    /* bottom: 4px; */
+  }

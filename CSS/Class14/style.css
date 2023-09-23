@@ -1,0 +1,90 @@
+   /* static field  */
+
+h1{
+    position: static;
+    background-color: blue;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+   
+}
+h1 > p{
+    display:  none;
+}
+h1:hover p{
+    display: block;
+}
+div{
+    border: 1px solid blue;
+    z-index: 2;
+}
+  /* Fixed Field  */
+#box{
+    position: fixed; /*fixed*/
+     width: 270px;
+    height: 270px;
+    bottom: 10px;
+    left: 10px;
+    background-color: aqua;
+}
+#info{
+    border: none;
+    display: none;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30%;
+}
+#box:hover #info {
+    display: block;
+}
+
+
+/* sticky field  */
+
+h2{
+    position: sticky;
+    /* top: 0px; */
+    bottom: 0px;
+    background-color: blueviolet;
+    color: aqua;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+           /* Relative field  */
+
+#big{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: azure;
+    /* margin: 30px auto; */
+    
+    /* top: 30px; */
+    /* bottom: 30px;
+       right: 30px; */
+       left: 300px;
+}
+
+           /* Absolute field  */
+#small{
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    width: 183px;
+    height: 183px;
+    line-height: 183px;
+    text-align: center;
+    background-color: yellow;
+    font-size: 20px;
+
+
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  
+    
+}
+

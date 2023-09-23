@@ -1,0 +1,62 @@
+/* Margin Tips */
+
+body{
+    /* margin: 0px; */
+    margin: 10px;
+}
+
+div{
+    border: 3px solid ;
+    /* padding: 10px;
+    margin: 50px; */
+}
+#mt{
+    border-color: blue;
+   
+}
+ #mt h1{
+    color: green;
+    margin-left: -40px;
+    
+ }
+         /* learn padding */
+
+ #lp{
+    border-color: red;
+   
+    /* padding: 20px; */
+    /* padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px; */
+
+    /* padding: 25px 150px; */
+    padding: 25px 50px 75px 102px;
+    
+ }
+ #lp h1{
+    margin: 0px;
+    /* border: 5px solid;
+    padding: 20px; */
+ }
+
+ /* TextAlignment */
+
+ #ta {
+    border: 2px dashed blue;
+    margin-bottom: 600px;
+ }
+ #ta h1{
+     
+    border: 2px solid;
+    text-align: center;
+ }
+ #ta a{
+    display: block;
+    border: 2px solid;
+    text-align: right;
+ }
+
+ #ta p{
+    text-align: justify;
+ }

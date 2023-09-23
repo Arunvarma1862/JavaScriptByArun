@@ -1,0 +1,69 @@
+ body{
+    margin: 0px;
+   
+ }
+ h1{
+    background-color: tomato;
+    color: blue;
+    padding: 10px;
+    margin: 0px;
+    /* margin: 50px 200px; */
+    text-align: center;
+ }
+ #content{
+    border: 3px double blueviolet;
+    padding: 0px 10px;
+ }
+ #content h2:first-child{
+    margin: 12px;
+}
+p{
+    text-align: justify;
+}
+
+/* pseudo classes */ 
+
+div#porem p:first-child
+{
+       /* color: blue; */
+}
+
+li:first-child{
+    color: blueviolet;
+}
+
+
+
+/* pseudo elements */
+
+/* p::first-line{
+    color: blueviolet;
+} */
+
+p:first-child::first-line{
+    color:aqua
+}
+p::first-letter{
+    color: red;
+    font-size: 25px;
+    margin-left: 20px;
+}
+li::first-letter{
+    color: yellow;
+}
+
+h1::before{
+    content: url(images/bullets/PointerNew.png);
+}
+li::before{
+    content: url(images/bullets/Right18.png);
+}
+
+h2::before{
+    content: url(images/bullets/PointerNew.png);
+}
+p::after{
+    /* content: 'END'; */
+    
+    content: url(images/bullets/Right18.png);
+}
