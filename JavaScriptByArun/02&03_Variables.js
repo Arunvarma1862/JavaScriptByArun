@@ -29,18 +29,34 @@
 // a=16;
 // console.log(a);
 
-var a=15;
-a=16;
-console.log(a);
+// var a=15;
+// a=16;
+// console.log(a);
 
-var n= 14;
-var n=23;
-console.log(n)
-;
+// var n= 14;
+// var n=23;
+// console.log(n)
+// ;
 
 // var a;
 // let x;
 // const m;
+
+
+function  greet(){
+
+    for(var i=0;i<5;i++){
+        console.log(i);
+    }
+}
+
+greet();
+console.log(i)
+
+
+const a=16;
+const a=18;
+
 
 
 
