@@ -2,7 +2,7 @@
 // Array MAp method  -- array wont change
 let arrr= [42,51,63,57];
  let a= arrr.map((value, index, array)=>{
-    console.log(value,index, array)
+    console.log(value,index,array)
     // return value+1;
     return value + index;
 })
