@@ -1,0 +1,17 @@
+p{
+    background-color: aquamarine;
+    /* display: inline */
+}
+a{
+    background-color: rgb(209, 218, 218);
+    display: block;
+}
+
+div{
+    background-color: yellow;
+    /* display: inline; */
+}
+span{
+    background-color: green;
+    /* display: block; */
+}
