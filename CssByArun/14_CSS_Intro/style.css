@@ -1,0 +1,17 @@
+body{
+    background-color: azure;
+}
+div{
+    background-color: blue;
+    /* display: inline; */
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    text-decoration: underline;
+}
+div:hover{
+    background-color: cyan;
+    color: green;
+}

@@ -1,0 +1,42 @@
+body{
+    background-color: aquamarine;
+}
+
+
+div p{
+    display: inline ;
+}
+
+img{
+    height: 255px;
+}
+
+tr td{
+    border: 1px solid green;
+}
+table{
+    border: 5px solid blue;
+}
+tr th{
+    border: 3px solid cyan;
+}
+form  div{
+    /* margin-top: 9px; */
+    margin-bottom: 9px;
+}
+
+.Inline{
+    background-color: blue;
+    color: wheat;
+    display: block;
+}
+.Block{
+    background-color: green;
+}
+#p{
+    display: block;
+}
+
+#Text {
+    font-size: 25px;
+}

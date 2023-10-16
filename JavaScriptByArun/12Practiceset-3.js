@@ -50,4 +50,4 @@ const mean= (p,q,k,l)=>{
 }
 
 const nm=mean(4,5,8,9);
-// console.log(nm);
+console.log(nm);
