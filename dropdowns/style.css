@@ -1,0 +1,54 @@
+html, body{
+  background-color: whitesmoke;
+}
+
+#h1{
+    background-color: rgb(189, 218, 189);
+    color: blueviolet;
+    display: inline;
+    
+  
+  }
+  #h1:hover{
+    background-color: antiquewhite;
+    color: blue;
+    font-size: 55px;
+  }
+  .dropdown{
+    border: 2px solid white;
+    background-color: aqua;
+    color: blue;
+    margin: 25px auto;
+    text-align: center;
+    width: 55%;
+ 
+  }
+  .dropdown:hover{
+    background-color: violet;
+    font-size: 50px;
+    /* box-sizing: border-box; */
+  }
+  #Player:active{
+    background-color: rgb(144, 194, 161);
+  }
+
+  .selectclass{
+    
+     background-color:  rgb(193, 193, 207); 
+     border: 1px solid blue;
+     padding: 20px;
+     margin: auto;
+      width: 50%;
+      height: 80px;
+      text-align: center;
+      text-overflow: clip;
+      overflow: hidden;
+
+   
+  }
+  .selectclass:hover{
+    background-color: rgb(197, 61, 91);
+    font-size: 25px;
+    color: rgb(177, 177, 202);
+    padding: 20px;
+  }

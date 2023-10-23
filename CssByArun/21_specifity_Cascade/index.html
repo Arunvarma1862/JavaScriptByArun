@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21_specifity_cascade</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    
+        h1.yellow{
+            color:yellow;
+        }
+        h1:hover {
+            color: red;
+        }
+        .cred{
+            color: aqua;
+        }
+        .cpurple{
+            /* color: blueviolet !important; */
+            
+             /* color: brown; */
+        }
+        [data-x=a]{
+            /* background-color: blue; */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- css specificity -!important (10000)-inlinecss (1000)- id selector (100) -class selector or attribute selector(10) or pseudu selector - element selector (1) - universal selector(0) -->
+    Hello world
+    <div>
+        <h1 style"color: "yellow" class="yellow cred cpurple" data-x="a" id="Id">CSS_specifity</h1>
+        <h1>hello1</h1>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

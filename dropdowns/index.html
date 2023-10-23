@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dropdowns</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+ <body>
+     <h1  id="h1" >Hello World  , Welcomes By Arun Varma</h1>
+     <h1  class="dropdown">Handle Dropdowns</h1>
+     <h1>Select class in Selenium WebDriver</h1>
+     <div style="font-size: larger ;  padding: 10px; font-family: 'Times New Roman', Times, serif; line-height: 1;  color: green; line-height: 1.5;">
+        
+        <p style="font-family: 'Times New Roman', Times, serif;">
+            The 'Select' class in Selenium WebDriver is used for selecting and deselecting option in a dropdown. The objects of Select type can be initialized by passing the dropdown webElement as parameter to its constructor.
+
+<p class="selectclass" >
+                                               WebElement course=driver.findElement(By.id("course")); <br>
+                                               Select courseElement= new Select(course);
+</p>
+                                              
+
+        </p>
+     </div>
+     <h1>Select class methods to handle dropdown</h1>  
+     <div style="font-size: larger ;  padding: 10px; font-family: 'Times New Roman', Times, serif; line-height: 1;  color: green; line-height: 1.5;">
+      
+        <pre >
+         <strong> WebDriver provides three ways to select an option from the drop-down menu.</strong>
+           
+1.<strong>selectByIndex</strong>  - It is used to select an option based on its index, beginning with 0.
+courseElement.selectByIndex(6);  
+2. <strong>selectByValue</strong> - It is used to select an option based on its 'value' attribute.
+courseElement.selectByValue("Java");  
+3. <strong>selectByVisibleText</strong> - It is used to select an option based on the text over the option.
+courseElement.selectByVisibleText("SystemTesting");
+
+        </pre>
+     </div>
+
+     <div>
+      <h1>Types of dropdowns:-</h1>
+      <ol>
+       <a href="single.html" target="_blank" id="hello" "> <li><strong>Single dropdown</strong></li></a> 
+       <a href="Multiple.html" target="_blank" class="Muliple"> <li id="mul">Multiple dropdown</li></a> 
+       <a href="https://www.hdfcbank.com/" target="_blank" class="Muliple"><li>Bootstrap download</li></a>
+         
+         <li>jQuery dropdown</li>
+         <li>auto dropdown</li>
+         <li>autoSuggest dropdown</li>
+      </ol>
+     </div>
+    
+<!--     
+     <div>
+        <h2>Single dropdowns</h2>
+        <form action="" method="post">
+
+            <div>
+             <label for="" >Teams :-</label>
+             <select name="" id="Player">
+                <option value="select">select</option>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="Paksitan">Paksitan</option>
+                <option value="England">England</option>
+                <option value="southAfrica">southAfrica</option>
+             </select>
+            </div>
+<div>
+    <br>
+
+    <h2>Multiple Dropdowns</h2>
+             <label for="">Players:-&nbsp;&nbsp;</label>
+             <select name="" id="Team" multiple="true">
+                <option value="Virat">Kohil_18</option>
+                <option value="Rahul">Rahul_1</option>
+                <option value="Sehwag">Sehwag_49</option>
+                <option value="ArunBabu">ArunBabu_88</option>
+                <option value="Bumrah">Bumrah_96</option>
+             </select>
+            </div>
+
+            <br><br>
+            <input type="reset" value="Reset" style="font-size: larger;">
+
+            <br><br><br><br><br><br>
+             
+        </form>
+     </div> -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

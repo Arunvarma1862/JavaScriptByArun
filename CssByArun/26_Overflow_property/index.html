@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26_Overflow_property</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .para{
+            border: 1px solid blue;
+            background-color: violet;
+            color: brown;
+        }
+        .para1{
+            width: 35vw;
+            height: 15vh;
+            /* overflow: auto;  it gives auto scroll */
+            /* overflow: scroll; */
+            /* overflow: hidden; */
+            white-space: nowrap;
+           
+             text-overflow: ellipsis;
+              /* text-overflow: clip; */
+             overflow: hidden;
+            
+        }
+        .para2{
+            /* width: 50vw;
+            min-height: 10vh ;   if text increase ,box is also increase automatically */
+
+/* 
+            width: 30vh;
+            height: 10vh;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            overflow: auto hidden ; */
+
+            width: 55px;
+            text-overflow: ellipsis;
+            /* overflow: hidden; */
+            word-break: break-all ;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    Hello world
+
+    <div>
+        <div class="para para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, similique, ea, perspiciatis accusantium praesentium facere aliquid tempora quis laboriosam dignissimos maiores illum dolore? Eum, voluptatem.orem ipsum dolor sit amet consectetur adipisicing elit. Nihil, similique, ea, perspiciatis accusantium praesentium facere aliquid tempora quis laboriosam dignissimos maiores illum dolore? Eum, voluptatem.
+        </div>
+        <p class="para para2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores sunt dolorum harum, eum eligendi quasi vitae corporis ab, quibusdam totam voluptate dolore eaque atque saepe id nesciunt unde optio? Vel, magni sint, rerum veritatis ipsa cum eveniet debitis quod nulla distinctio incidunt perferendis. Sit eveniet corporis, aliquam nemo mollitia, praesentium temporibus hic recusandae architecto voluptatum dolore tempora consequatur corrupti earum numquam, dolorum natus eum officiis quam voluptatibus quia. Debitis commodi accusamus laborum assumenda velit sapiente provident ab dolor ea voluptatum, numquam aspernatur nemo quaerat necessitatibus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur aperiam amet voluptatum. Nihil cupiditate magni ex aut repudiandae earum omnis aspernatur asperiores eligendi animi ducimus vitae totam, dolore neque harum sit quis amet perferendis exercitationem eos dolorum libero recusandae? Quaerat id vitae magni necessitatibus tempora ex natus, minima numquam molestiae modi illo. Dolores adipisci a quos ipsa doloribus saepe molestiae sed, magnam ut nobis, natus, delectus tenetur incidunt?
+        </p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

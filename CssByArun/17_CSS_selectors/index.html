@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17_CSS_selectors</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ 
+        /* element selector  */
+        div {
+            /* background-color: red; */
+
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+
+        /* id selector */
+        #blue{
+            background-color: blue;
+        }
+
+        /* child selector */
+
+        div > p{
+            /* background-color: yellow; */
+        }
+        /* descendant sector  */
+
+        div  p{
+            background-color: orange;
+            color: azure;
+        }
+
+        /* universal selector  */
+           *{
+            margin: 0;
+            padding: 0;
+           }
+
+           /* pseudo selector */  
+
+
+           a:visited  {
+            color: violet;
+           }
+            /* if not visited link shows green color  */
+           a:link{
+            color :green
+           }
+
+           a:active{
+            background-color: yellow;
+           }
+
+           a:hover {
+            background-color: blueviolet;
+           }
+           p:first-child{
+            background-color: aquamarine ;
+           }
+           
+    </style>
+</head>
+<body>
+    
+
+    <div class="red">
+        Hello world I am a div
+    </div>
+
+    <div  id="blue">
+        I am another div
+    </div>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsum sit vero animi, necessitatibus itaque aspernatur facere quos molestiae iste asperiores amet? Dolores, aliquid facere!</p>
+    </div>
+
+    <div>
+        <article>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore eaque adipisci impedit nisi, maiores labore a quasi tenetur est magnam esse, reprehenderit cumque ab commodi saepe, architecto consequatur nihil? Ratione molestias eligendi consequatur unde perspiciatis dolor quibusdam eos itaque, consectetur nostrum, impedit temporibus minus natus pariatur quasi repellendus in dolorem!</p>
+        </article>
+    </div>
+
+    <main>
+        <p>one</p>
+        <p>two</p>
+        <p>three</p>
+    </main>
+
+    <div>
+        <p>One</p>
+        <p>Two</p>
+        <p>Three</p>
+    </div>
+
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to FaceBook</a>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

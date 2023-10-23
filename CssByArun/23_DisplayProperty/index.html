@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23_Display_property</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 5px solid blue;
+            background-color: rgb(223, 223, 231);
+            /* display: inline; */
+            display:inline-block;
+            width: 500px;
+            padding: 36px;
+            margin: 55px;
+             
+        
+        }
+        span{
+            /* display: block; */
+        }
+        .box1{
+            /* display: none; */
+            /* visibility: hidden; */
+
+            /* display: flex; */
+            /* justify-content: center; */
+
+            width: 200px;
+            height: 250px;
+            padding: 36px;
+        }
+    </style>
+</head>
+<body>
+
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    
+    <div class="box box1">Hello World,I am a div</div>
+    <div class="box">Another Box</div>
+    <span>I am a good</span>
+    <span>boy</span>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
