@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34_css_float_clear</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            float: left;
+        }
+        .cards{
+            border: 2px solid blue;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid violet;
+        }
+        .card:nth-child(3){
+            background-color: brown;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hello World -->
+
+    <!-- .cards>.card*3  -->
+
+    <div class="cards">
+        <img width="233px"  src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt="">
+        <div class="card"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eaque totam blanditiis inventore architecto quisquam, quod molestiae quos beatae iure, voluptatum, nulla similique.</p></div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, dolorem. Veritatis debitis sint aliquid laudantium, rerum fugiat harum inventore atque ad dolorem hic id impedit similique explicabo aperiam quasi. Iste nulla sequi sit voluptates nisi, voluptate itaque placeat? Quibusdam pariatur asperiores esse doloremque? Sed rerum nemo voluptatibus error, quisquam provident voluptatum dolor nobis aut excepturi nisi necessitatibus expedita, voluptatem tempore esse cum! Illum, ad commodi culpa blanditiis, numquam quod omnis fuga recusandae aperiam non possimus adipisci totam cumque placeat assumenda, autem molestias? Dolores voluptatem distinctio optio tempore ipsam temporibus, praesentium totam minus illum itaque rem saepe, mollitia magnam ea omnis nihil unde quod natus ducimus iste non officia velit iusto? Reiciendis corrupti non voluptatum nihil inventore quis, eum sequi quibusdam numquam, vitae laudantium illum earum debitis provident praesentium fugiat sunt! Exercitationem, unde beatae aperiam debitis consectetur, labore et inventore rerum reprehenderit provident quia corporis earum. Officia adipisci modi, amet ad ipsa, sint eaque natus exercitationem aliquid dolorem itaque possimus dicta ut consequatur, laboriosam dolores vitae accusamus ea. Cupiditate, iusto voluptas voluptatum, fuga quisquam iure sed facilis, tempore ipsum odio nulla eum odit impedit ullam asperiores deleniti a ratione? Cum tempora saepe dolores sequi neque facere voluptates dignissimos, ea aliquid fugit amet quod eveniet, consequuntur ipsam nam placeat molestiae deserunt veniam quis porro. Aliquid, vel molestias tempora rerum iure ipsa, mollitia sint dolor enim eos veritatis quia ad obcaecati, accusantium quaerat reprehenderit nesciunt exercitationem iusto dolorum dolores aspernatur blanditiis? Fugit saepe aperiam placeat beatae voluptates voluptatum rerum. Distinctio, nesciunt reiciendis? At, cum perspiciatis quod libero architecto amet, corporis laboriosam nobis totam animi voluptas exercitationem? Autem cumque sapiente reprehenderit aliquid ducimus harum magnam quibusdam ullam fuga. Rem temporibus eius obcaecati sapiente ab earum ex, sit officia optio eaque rerum tempore veritatis cupiditate tenetur aspernatur delectus? In, debitis at mollitia eius, ex cum est iure unde harum voluptatibus totam dolor reprehenderit dolores consequatur quae facilis eligendi minima, labore qui? Ducimus dolorum nisi excepturi deserunt.</div>
+        <div class="card">Card 3</div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

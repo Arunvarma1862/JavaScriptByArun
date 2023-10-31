@@ -1,32 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body{
-  background-color: whitesmoke;
+  background-color: white;
+  width: 100vw;
+  height:100vh;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  margin: 8px;
+  padding: 8px;
 }
 
 #h1{
-    background-color: rgb(189, 218, 189);
+    /* background-color: rgb(127, 218, 127); */
     color: blueviolet;
-    display: inline;
+    display: inline-block;
+    text-shadow: 5px 5px 8.5px rgb(60, 193, 216);
+    font-family: 'Times New Roman', Times, serif;
     
   
   }
   #h1:hover{
-    background-color: antiquewhite;
+    background-color: rgb(168, 240, 135);
     color: blue;
     font-size: 55px;
   }
   .dropdown{
     border: 2px solid white;
-    background-color: aqua;
-    color: blue;
+    background-color: rgb(37, 66, 66);
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px rgb(77, 77, 53);
+    color: rgb(139, 139, 235);
     margin: 25px auto;
     text-align: center;
-    width: 55%;
+    width: 444px;
+    padding: 10px;
+    box-sizing: border-box;
  
   }
   .dropdown:hover{
-    background-color: violet;
-    font-size: 50px;
+    background-color: rgb(128, 43, 128);
+    /* font-size: 50px; */
     /* box-sizing: border-box; */
+  }
+
+ .h2{
+  box-sizing: border-box;
+  /* width: 50%;
+  height: 10%; */
+    margin-top: 25px;
+    padding: 10px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(220, 226, 213);
+    
   }
   #Player:active{
     background-color: rgb(144, 194, 161);
@@ -34,12 +66,13 @@ html, body{
 
   .selectclass{
     
-     background-color:  rgb(193, 193, 207); 
+     background-color:  rgb(135, 135, 194); 
      border: 1px solid blue;
+     color: white;
      padding: 20px;
      margin: auto;
-      width: 50%;
-      height: 80px;
+      width: 633px;
+      height: 110px;
       text-align: center;
       text-overflow: clip;
       overflow: hidden;
@@ -47,8 +80,15 @@ html, body{
    
   }
   .selectclass:hover{
-    background-color: rgb(197, 61, 91);
+    background-color: rgb(157, 240, 119);
     font-size: 25px;
-    color: rgb(177, 177, 202);
+    color: rgb(111, 111, 180);
     padding: 20px;
+  }
+
+  ol{
+    margin: 1%;
+    padding: 15px;
+    line-height: 1.5;
+    font-size: 25px;
   }

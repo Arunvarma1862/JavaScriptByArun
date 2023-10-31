@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30_css_variables</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root{
+            --color:rgb(60, 60, 114);
+            --seccolor:rgb(199, 199, 235);
+            --defpad:25px;
+            --defop:0.3;
+            --defborder:15px solid yellow;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            /* border: 5px solid var(--seccolor); */
+            border: var(--defborder);
+        }
+        ul li:first-child{
+            --color:rgb(210, 211, 168); 
+            background-color: var(--color,cyan);
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+
+    </style>
+
+</head>
+<body>
+    Hello World
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio veritatis dicta similique error enim unde eius excepturi nulla ducimus laborum veniam saepe alias vero consectetur, aspernatur magni ab inventore? Asperiores alias obcaecati, magni minus libero tempora enim repellendus eligendi maiores eaque, ducimus distinctio ut inventore quibusdam voluptatibus repudiandae quo nihil eveniet. Maiores nisi laudantium illum!
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

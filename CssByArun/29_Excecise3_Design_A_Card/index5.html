@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100vw;
+            height: 100vh;
+        }
+        .container{
+             width: 100%;
+             height:100%;
+             background-color: aliceblue;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            
+        }
+        .card{
+            width: 299px;
+            height: 533px;
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            gap: 20px;
+           
+        }
+
+        .image{
+            width: 100%;
+            height: 35%;
+            border-radius: 25px;
+            padding: 3px;
+        }
+        .about{
+            width: 100%;
+            padding-left: 15px;
+        }
+        .nature{
+            border: 1px solid blue;
+            box-shadow: 5px 5px 5px grey;
+            padding: 5px;
+            border-radius: 15px;
+            font-weight: 800;
+            
+        }
+        .lake{
+            border: 1px solid blue;
+            box-shadow: 5px 5px 5px rgb(151, 82, 82);
+            padding: 5px;
+            margin-left: 15px;
+            border-radius: 15px;
+            font-weight: 800;
+        }
+        h1{
+             text-align: center;
+        }
+        .para{
+            font-weight: 800;
+            padding: 5px;
+            margin: 5px;
+        }
+        .foot{
+            border: 1px solid blue;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px grey;
+            padding: 5px;
+            /* display: inline-block; */
+            margin: 5px auto;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+                  <img src="card.jpg" alt="Image" class="image">
+
+    <div class="about">
+    <span class="nature">Nature</span>
+    <span class="lake">Lake</span>
+
+      </div>
+
+      <h1>Lorem dollar</h1>
+      <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus accusantium placeat facere eveniet animi suscipit atque voluptas facilis, incidunt nostrum excepturi in recusandae doloremque quaerat.</p>
+       <a href="" class="foot">Readmore</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
