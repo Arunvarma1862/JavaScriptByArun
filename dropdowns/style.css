@@ -26,16 +26,16 @@ html, body{
   
   }
   #h1:hover{
-    background-color: rgb(168, 240, 135);
-    color: blue;
+    background-color: rgb(79, 119, 61);
+    color: rgb(185, 185, 207);
     font-size: 55px;
   }
   .dropdown{
     border: 2px solid white;
-    background-color: rgb(37, 66, 66);
+    background-color: rgb(131, 40, 126);
     border-radius: 15px;
     box-shadow: 15px 15px 15px rgb(77, 77, 53);
-    color: rgb(139, 139, 235);
+    color: rgb(200, 200, 219);
     margin: 25px auto;
     text-align: center;
     width: 444px;
@@ -91,4 +91,7 @@ html, body{
     padding: 15px;
     line-height: 1.5;
     font-size: 25px;
+  }
+  a{
+    text-decoration: none;
   }

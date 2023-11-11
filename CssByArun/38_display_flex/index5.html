@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38_display_flex</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 80vh;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            align-content: center;
+            /* gap: 20px 20px; */
+
+        }
+        .items{
+            width: 32px;
+            height: 32px;
+            border: 1px solid blue;
+            background-color: violet;
+            /* padding: 10px; */
+            /* margin: 10px; */
+            /* flex-grow: 1; */
+
+        }
+        .item1{
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            /* align-self: flex-end; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="items item1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+      
+       
+       
+    </div>
+    
+</body>
+</html>

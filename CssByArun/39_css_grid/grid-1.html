@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39_css_grid</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 80vw;
+            height: 100vh;
+            border: 5px solid yellow;
+            display: grid;
+            /* grid-template-columns: [p]120px [d]110px  [t]; */
+            /* grid-template-rows: 100px 100px 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4,1fr); */
+            /* grid-template-columns: repeat(4,minmax(100px,1fr)); */
+            grid-template-columns: repeat(4,80px);
+            grid-template-rows: repeat(2,80px);
+            /* gap: 24px; */
+            row-gap: 24px;
+            column-gap: 23px;
+            justify-items: center;
+            align-items: center;
+
+            /* justify-content: center;
+            align-content: end; */
+
+            place-content: center;
+
+
+        }
+        .items{
+               border: 1px solid blue;
+               width: 56px;
+               height: 56px;
+        }
+        .item-4{
+
+            /* grid-row: 1/2;
+            grid-column: d/t; */
+        }
+        .item-1{
+
+        /* grid-row: 1/2;
+        grid-column: 1/2; */
+
+        /* grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2; */
+}
+.self{
+    /* align-self: flex-start;
+    justify-self: flex-end; */
+}
+    </style>
+</head>
+<body>
+    <!-- Hello World -->
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items self">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
