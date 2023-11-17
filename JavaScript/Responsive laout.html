@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        body{
+            height: 95vh;
+            background-color: aqua;
+            font-family: sans-serif;
+            text-align: center;
+            color: rgb(102, 62, 62);
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header{
+            background-color: blue;
+            padding: 1em 0 1em 0;
+        }
+        nav{
+
+            background-color: rgb(51, 255, 0);
+            padding: 2em 0 2em 0;
+        }
+        .left{
+
+            background-color: rgb(43, 201, 111);
+            padding: 2em 0 2em 0;
+            flex: 1 1 100px;
+           
+        }
+        .right{
+
+            background-color: rgb(201, 43, 180);
+            padding: 2em 0 2em 0;
+            flex: 1 1 100px;
+           
+        }
+        div main{
+            background-color: rgb(124, 102, 121);
+            padding: 2em 0 2em 0;
+            flex: 5 5 150px;
+          
+        }
+        footer{
+            background-color: rgb(43, 169, 201);
+            padding: 1em 0 1em 0;
+        }
+        .main{
+            display: flex;
+            flex: 1;
+        }
+        @media all and (max-width:500px){
+            .main{
+                flex-direction: column;
+            }
+            main{
+                padding: 5em 0 5em 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+<h1>Header</h1>
+    </header>
+  
+    <div class="main">
+        <aside class="left">LEFT</aside>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur consequuntur tenetur officia nemo sint esse velit, dicta eligendi voluptatibus ipsam? Temporibus at quidem iusto suscipit.
+
+        </main>
+        <aside class="right">RIGHT</aside>
+    </div>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+.logo img {
+    width: 130px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    /* background-color: violet; */
+}
+.right ul{
+    display: flex;
+    gap: 31px;
+}
+.right ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+   
+
+}
+.right ul li a{
+    padding: 5px;
+    text-decoration: none;
+
+}
+/* section span{
+    text-align: center;
+    display: block;
+   line-height: 1.5;
+   margin: 60px 10px 40px 10px;
+   font-size: 34px;
+   font-family: sans-serif;
+
+}*/
+.sp2{
+    font-size: 22px;
+    width: 46vw;
+    margin: auto;
+}
+section span img{
+   width: 96px;
+   margin: 0px 10px;
+}
+button.but{
+ 
+    padding: 10px;
+    background-color: rgb(80, 156, 156);
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: white;
+    border: none;
+} 
+button.btn{
+ 
+ padding: 10px;
+ background-color: rgb(80, 156, 156);
+ border-radius: 5px;
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 16px;
+ color: white;
+ border: none;
+ cursor: pointer;;
+} 
+button.btn a{
+    text-decoration: none;
+    color: white;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+    font-size: 30px;
+}
+.second div ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin:50px 362px 50px -311px;
+   
+ 
+  
+}
+.second div li:first-child{
+    background-color: yellow;
+    padding: 15px;
+    font-size:xx-large;
+    font-weight: bold;
+}
+.second div li:nth-child(2){
+     padding: 10px;
+}
+li{
+    list-style: none;
+}
+.grid{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 10px;
+  max-width: 65vw;
+   margin: auto;
+  /* grid-template-rows: 100px 100px 100px; */
+
+ 
+  
+}
+.item{
+    /* display: flex; */
+    /* flex-direction: column; */
+    background-color: rgb(230, 247, 247);
+    padding: 58px 45px 29px 41px;
+    border-radius: 5px;
+    font-size: 32px;
+    font-family: sans-serif;
+}
+button.Green{
+    background-color: green;
+}
+ .item-first{
+    text-align: center;
+    padding-bottom: 23px;
+    font-weight: bold;
+    
+   
+}
+@media screen and (max-width :1001px) 
+{
+    .grid
+    {
+    
+   grid-template-columns: 1fr;
+   gap: 10px;
+
+    }
+  
+}

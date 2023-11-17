@@ -53,13 +53,74 @@ else{
 
 // Q5
 
-const numb= prompt("enter number");
-console.log("you can ", numb>=18? "drive": "not drive");
+// const numb= prompt("enter number");
+// console.log("you can ", numb>=18? "drive": "not drive");
 
-const number = prompt("enter number")
-   numbers = number>=18? "can drive": "cant drive";
-//   numbers= Number.parseInt(numbers);
-   console.log(typeof numbers)
-   console.log(numbers);
-  
+// const number = prompt("enter number")
+//    numbers = number>=18? "can drive": "cant drive";
+// //   numbers= Number.parseInt(numbers);
+//    console.log(typeof numbers)
+//    console.log(numbers);
+
+// Q1
+
+/*let a=prompt("Enter age ");
+if(a>10 && a<20){
+    console.log("lies between 10 and 20")
+}
+else{
+    console.log("not lies between 10and 20")
+}*/
+
+//Q2
+/*
+let a =prompt("Enter age")
+a=Number.parseInt(a);
+
+switch(a){
+    case 12:
+        console.log("age is 12")
+        break;
+    
+        case 13:
+        case 14:
+console.log("age is 13&14")
+break
+        
+
+default:
+    console.log("Not valid age")
+
+}*/
+
+//Q3
+/*
+let a= prompt("enter a number")
+if(a%2==0 && a%3==0){
+    console.log("divisible 2 and 3")
+}
+else {
+    console.log("not divisible 2 and 3")
+}*/
    
+//Q4
+
+// let a= prompt("enter a number")
+// a=Number.parseInt(a);
+// if(a%2==0 || a%3==0){
+//     console.log("divisible 2 or 3")
+// }
+// else {
+//     console.log("not divisible 2 or 3")
+// }
+// console.log(typeof a)
+
+//Q5
+
+// let a= prompt("enter a number")
+// a=Number.parseInt(a);
+// console.log(`"You can drive" ,${a>18? "drive": "Notdrive" }`);
+
+let age=19;
+let a=age>18 ? "you can drive":"you cant drive";
+console.log(a)
