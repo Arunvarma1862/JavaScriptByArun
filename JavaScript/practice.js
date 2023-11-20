@@ -93,8 +93,67 @@ const obj={
 // console.log("Right number")
 
 
-const mean=(a,b,c,d)=>{
-   return a+b+c+d/4;
-}
+// const mean=(a,b,c,d)=>{
+//    return a+b+c+d/4;
+// }
 
-console.log(mean(1,2,5,8))
+// console.log(mean(1,2,5,8))
+
+
+// const name="peter";
+// console.log(name)
+// console.log(name.toLowerCase());
+
+
+// const names="har\"";
+// const nam1= "    jksdfjsd     "
+// const per ="viru sehwag";
+// console.log(names)
+// console.log(names.length)
+// console.log(names.concat(" is the friend of friend"))
+// console.log(names.slice(1,2));
+// console.log(names.slice(2));
+// console.log(names.replace("h","p"))
+// console.log(nam1.trim())
+// console.log(nam1.trimStart())
+// console.log(nam1.trimEnd())
+// console.log(names.toLowerCase())
+// console.log(names.toUpperCase())
+// console.log(names.includes("h"));
+// const sentence="The brown fox jumps over the lazy dog ";
+// const word="fox";
+// console.log(`the word ${word} ${sentence.includes(word) ? "is": "is not"} in the sentence`);
+// console.log(`the word ${word} ${sentence.endsWith(word) ? "is":"is not "} in the sentence`)
+// console.log(`the word ${word} ${sentence.startsWith(word) ? "is":"is not "} in the sentence`)
+// console.log(names.toUpperCase());
+// const money="please give amount Rs1000";
+// let final=money.slice("please give amount Rs".length);
+// final =Number.parseInt(final);
+// console.log(typeof money);
+// console.log(typeof final)
+// console.log(money.slice(19))
+
+// let friend = "sehwag";
+// friend[4]="l";
+// console.log(friend)
+
+// const item={
+//    hello:52,
+//    hii:63,
+//    klp:96,
+//    hjo:85
+// }
+// console.log(item.hello)
+// console.log(item['hii'])
+// console.log(item)
+// item['hii']=98;
+// console.log(item)
+const item=[14,52,63,"helloo", null, undefined]
+console.log(item)
+console.log(item[3])
+for(let i=0;i<item.length;i++){
+  console.log(item[i])
+}
+for(let key of item){
+   console.log(key)
+}

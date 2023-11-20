@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>51_Excercise-8</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            position: relative;
+            width: 60vw;
+            height: 60vh;
+            background-color: blue;
+            
+        }
+        .box1{
+            width: 69px;
+            height: 76px;
+            border-radius: 75px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            /* animation: animatex 3s linear infinite,
+             animatey 3s ease-in-out infinite alternate; */
+
+
+         
+        }
+        @keyframes animatex{
+            from{
+               left: 0;
+                
+            }
+            to{
+              left: 100%;
+            }
+        }
+        @keyframes animatey{
+            from{
+             bottom: 0;
+                
+            }
+            to{
+               bottom: 100%; 
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Hello World -->
+    <div class="container">
+        <div class="box1">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

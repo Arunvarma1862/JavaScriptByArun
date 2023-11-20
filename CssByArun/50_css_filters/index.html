@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="style.css">
     <style>
         img{
-            
+            /* filter: blur(10px); */
+
+        }
+        .img1{
+            filter: brightness(100%);
+
+        }
+        .img2{
+             /* filter: contrast(25%); */
+             /* filter: invert(1); */
+                 filter: opacity(0.8);
+
+        }
+        .img3{
+            /* filter: grayscale(63%); */
+            filter: sepia(63%);
+
         }
 
     </style>
@@ -16,7 +32,9 @@
 <body>
     <!-- Hello World -->
     <div class="container">
-        <img src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="">
+        <img class="img1" src="http://www.shadowsphotography.co/wp-content/uploads/2017/12/photography-01-800x400.jpg" alt="">
+        <img class="img2" width="50%" src="https://imgv3.fotor.com/images/slider-image/A-blurry-image-of-a-woman-wearing-red.jpg" alt="">
+        <img class="img3" width=50% src="https://media-s3-us-east-1.ceros.com/getty-images-services/images/2021/02/17/873fbbf6e4e681de0a096047fbba095d/da-20-0630.jpg" alt="">
     </div>
     <script src="script.js"></script>
     
