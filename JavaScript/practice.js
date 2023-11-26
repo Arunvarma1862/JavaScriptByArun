@@ -148,12 +148,172 @@ const obj={
 // console.log(item)
 // item['hii']=98;
 // console.log(item)
-const item=[14,52,63,"helloo", null, undefined]
-console.log(item)
-console.log(item[3])
-for(let i=0;i<item.length;i++){
-  console.log(item[i])
-}
-for(let key of item){
-   console.log(key)
-}
+
+
+// const item=[14,52,63,"helloo", null, undefined]
+// console.log(item)
+// console.log(item[3])
+// item[0]="51000";
+// item[6]="63214";
+// console.log(item)
+// for(let i=0;i<item.length;i++){
+//   console.log(item[i])
+// }
+// for(let key of item){
+//    console.log(key)
+// }
+
+// let a=[4,5,5,6,9];
+// console.log(a,typeof a);
+
+// let b= a.toString();
+// console.log(b,typeof b)
+
+// let c=a.join("_");
+//  console.log(c, typeof c);
+
+//  let numm= [1,52,86,3];
+//  let nuuuu=numm.pop();
+//  console.log(numm, nuuuu)
+
+//  let k1= [12,85,96,74,32];
+//   let l1=k1.push(96);
+//  console.log(k1,l1)
+
+//  let k2=[12,85,96,74,32];
+//  let l2=k2.shift();
+//  console.log(k2,l2)
+
+//  let k3=[12,85,96,74,32];
+//  let l3=k2.unshift(53);
+//  console.log(k3,l3)
+
+//  let k4=[1,2,3,4,5,6];
+//  delete k4[0];
+//  console.log(k4);
+// let a=[1,5,6,85,96,56];
+// let b=[1,5,6,85,96,56];
+// let c=[1,5,6,85,96,56];
+
+// let d=a.concat(b,c);
+// // console.log(d);
+// // console.log(b)
+
+// let compare =(a,b)=>{
+//    return b-a;
+// }
+
+// let bl=[1,5,6,85,96,56];
+// // bl.sort(compare);
+// // console.log(bl)
+// // bl.reverse();
+// // console.log(bl);
+
+// let lp=bl.splice(2,3,251,631,869,632,963);
+// console.log(bl,lp);
+
+// let lo=bl.slice(2,4);
+// console.log(lo)
+
+
+// let item=[4,52,96,36];
+// for(i=0;i<item.length;i++){
+//    console.log(item[i])
+// }
+// for(let key in item){
+//    console.log(item[key]+ " "+key)
+// }
+// for(let key of item){
+//    console.log(key)
+// }
+// item.forEach(element=>
+//    {
+//    console.log(element)
+// }  )
+
+
+// let item="helloo";
+// console.log(item, typeof item)
+ 
+// let items=Array.from(item);
+// console.log(items, typeof items, item);
+
+
+// let a=[52,63,96];
+// a.forEach((value)=>{
+//    console.log(value*value);
+// })
+// console.log(a)
+
+// let p=a.map((value,index, array)=>{
+//    console.log(value, index,array);
+//    return value+1;
+// })
+// console.log(p)
+
+
+// const item =(a,b)=>{
+//    return a*b
+// }
+// console.log(item(5,3));
+
+// let list=[63,86,96,2,6,5];
+// let lo=list.filter((list)=>{
+//    return list>10;
+// })
+// console.log(lo);
+// let arr=[1,5,3,8,9];
+// const red=(a,b)=>{
+//     return a+b
+// }
+// console.log(arr.reduce(red))
+// let newarr=arr.reduce((a,b)=>{
+//    return a+b;
+// })
+// console.log(newarr);
+
+//1
+
+// let a=[41,63,85];
+// let user=prompt("enter number");
+//   user =Number.parseInt(user)
+
+// a.push(user);
+// console.log(a)
+
+//2
+
+// let a=[41,63,85];
+// let user;
+
+
+//  do{
+//    user=prompt("enter number");
+//    user =Number.parseInt(user);
+//    a.push(user)
+//   }
+//   while(user!==0)
+//   console.log(a);
+
+//3
+
+// let user=[50,32,96];
+// let a= user.filter((user)=>{
+//    return user%10==0;
+// })
+// console.log(a)
+
+//4
+
+// let user=[2,4,6];
+//  let ne=user.map((a)=>{
+//    return a*a;
+// })
+// console.log(ne)
+
+//5
+let user =[1,3,5];
+let n=user.reduce((a,b)=>{
+   return a*b;
+})
+console.log(n)

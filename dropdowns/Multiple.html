@@ -4,14 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        nav ul{
+            display: flex;
+            /* padding: 5px; */
+            background-color: pink;
+
+        }
+        li{
+            list-style: none;
+            padding: 15px;
+            font-size:24px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
       <div>
+     
+       
         <form action="">
             <div>
                 <h2>Multiple Dropdowns</h2>
+
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </header>
+
              <label for="">Players:-&nbsp;&nbsp;</label>
-             <select name="" id="Team" multiple="true" style="font-size: larger;">
+             <select name="CricketPlayers" id="Team" multiple="true" style="font-size: larger;">
                 <option value="Virat">Kohil_18</option>
                 <option value="Rahul">Rahul_1</option>
                 <option value="Sehwag">Sehwag_49</option>

@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+    <style>*{
+        padding: 0;
+        margin: 1px;
+    }
         nav{
             background-color: violet;
             padding :10px;
@@ -22,6 +25,9 @@
         }
 a{
     text-decoration: none;
+}
+input{
+    padding: 5px;
 }
     </style>
 </head>
@@ -45,13 +51,15 @@ a{
 
             <div>
              <label for="" >Teams :-</label>
-             <select name="" id="Player"  style="font-size: larger;">
+             <select name="IntTeams" id="Player"  style="font-size: larger;">
                 <option value="select">select</option>
                 <option value="India">India</option>
                 <option value="Australia">Australia</option>
                 <option value="Paksitan">Paksitan</option>
                 <option value="England">England</option>
                 <option value="southAfrica">southAfrica</option>
+                <option value="usa">USA</option>
+               
              </select>
             </div>
                 <script src="script.js"></script>
