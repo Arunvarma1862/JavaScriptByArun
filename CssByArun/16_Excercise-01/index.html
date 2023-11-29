@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16_Excercise_1
     </title>
+    <style>
+        .audio ol {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+        .video ol {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+        .video ol li video{
+            width: 250px;
+            /* height: 50px; */
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Videos and Audio lists</h1>
+    <!-- <h1>Videos and Audio lists</h1>
     <table>
         <tr>
             <td><video src="videos/2657045_0_VIDEO_20230317_000648.mp4" controls width="299"></video></td>
@@ -29,7 +48,28 @@
     <video src="videos/2657045_0_VIDEO_20230317_000648.mp4" controls width="299"></video>
     <video src="videos/city.mp4" controls width="299"></video>
     <video src="videos/FaceMatch_voice02_Library _ Loom - 8 February 2023.mp4" controls width="299"></video>
-    <video src="videos/Library _ Loom - 5 September 2023.mp4" controls width="299"></video>
+    <video src="videos/Library _ Loom - 5 September 2023.mp4" controls width="299"></video> -->
+
+    <h2>Video lists</h2>
+    <div class="audio">
+        <ol>
+            <li><audio src="music/Believe.mp3" controls></audio></li>
+            <li><audio src="music/Crazy.mp3" controls></audio></li>
+            <li><audio src="music/Dreaming.mp3"controls></audio></li>
+            <li><audio src="music/I_Just_Wanna_Be_Great.mp3"controls></audio></li>
+            <li><audio src="music/Inspired.mp3" controls></audio></li>
+            <li><audio src="music/Mama.mp3"controls></audio></li>
+        </ol>
+    </div>
+    <div class="video">
+        <ol>
+            <li><video src="videos/2657045_0_VIDEO_20230317_000648.mp4" controls ></video></li>
+            <li><video src="videos/city.mp4"controls autoplay muted ></video></li>
+            <li><video src="videos/FaceMatch_voice02_Library _ Loom - 8 February 2023.mp4"autoplay muted></video></li>
+            <li><video src="videos/Library _ Loom - 5 September 2023.mp4" controls></video></li>
+            <a href="music/Believe.mp3" download="File" >File download</a>
+        </ol>
+    </div>
     
 </body>
 </html>

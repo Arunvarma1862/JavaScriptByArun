@@ -312,8 +312,32 @@ const obj={
 // console.log(ne)
 
 //5
-let user =[1,3,5];
-let n=user.reduce((a,b)=>{
-   return a*b;
-})
-console.log(n)
+// let user =[1,3,5];
+// let n=user.reduce((a,b)=>{
+//    return a*b;
+// })
+// console.log(n)
+
+let GuessNumber;
+let random_number=Math.floor(Math.random() * 101);
+let score=0;
+console.log("random Number"+ random_number )
+while(GuessNumber!=random_number){
+
+   GuessNumber=prompt("Enter number");
+   // GuessNumber=  Number.parseInt(GuessNumber);
+
+if(random_number>GuessNumber){
+   console.log("number is greater ")
+   score++;
+}
+else if(random_number<GuessNumber){
+   console.log("number is lesser ")
+   score++;
+}
+else{
+   console.log("100 is crossing")
+   score++;
+}
+}
+console.log(`The score is ${100-score}`);

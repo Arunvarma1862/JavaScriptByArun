@@ -7,15 +7,15 @@ let score=100;
 let userInput;
 console.log(randomnumber)
 document.write(randomnumber)
+
 while(true){
-    
      userInput=prompt("enter a number");
-    if(userInput>randomnumber){
+    if(userInput<randomnumber){
         console.log("number is greater ");
         score--;
         alert("number is greater")
     }
-    if(userInput<randomnumber){
+    if(userInput>randomnumber){
         console.log("number is smaller");
         score--;
         alert("number is smaller")
@@ -27,7 +27,8 @@ while(true){
     if(userInput==randomnumber){
         console.log("enter right number");
         console.log(`your score is ${score}`);
-        document.write(score)
+        
+        document.write("\n"+score)
         break;
     }
 }
