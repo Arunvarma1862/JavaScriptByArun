@@ -318,26 +318,42 @@ const obj={
 // })
 // console.log(n)
 
-let GuessNumber;
-let random_number=Math.floor(Math.random() * 101);
-let score=0;
-console.log("random Number"+ random_number )
-while(GuessNumber!=random_number){
+// let GuessNumber;
+// let random_number=Math.floor(Math.random() * 101);
+// let score=0;
+// console.log("random Number"+ random_number )
+// while(GuessNumber!=random_number){
 
-   GuessNumber=prompt("Enter number");
-   // GuessNumber=  Number.parseInt(GuessNumber);
+//    GuessNumber=prompt("Enter number");
+//    // GuessNumber=  Number.parseInt(GuessNumber);
 
-if(random_number>GuessNumber){
-   console.log("number is greater ")
-   score++;
+// if(random_number>GuessNumber){
+//    console.log("number is greater ")
+//    score++;
+// }
+// else if(random_number<GuessNumber){
+//    console.log("number is lesser ")
+//    score++;
+// }
+// else{
+//    console.log("100 is crossing")
+//    score++;
+// }
+// }
+// console.log(`The score is ${100-score}`);
+
+let obje={
+   hap:56,
+   jk:52,
+   dks:63
 }
-else if(random_number<GuessNumber){
-   console.log("number is lesser ")
-   score++;
-}
-else{
-   console.log("100 is crossing")
-   score++;
-}
-}
-console.log(`The score is ${100-score}`);
+console.log(typeof obje);
+
+let a=[4,5,2,5,3];
+console.log(typeof a)
+
+console.log(obje, obje.hap, obje["hap"])
+obje.oki=563;
+obje.jk=6321;
+console.log(obje)
+

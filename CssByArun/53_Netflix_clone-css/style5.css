@@ -321,6 +321,7 @@ section.first > div :nth-child(2){
     border-radius: 3px;
     font-size: 15px;
     padding: 15px 95px 15px 7px;
+    color: white;
 
 }
 .box input::placeholder{
