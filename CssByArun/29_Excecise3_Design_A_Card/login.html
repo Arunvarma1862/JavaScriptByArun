@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AiFiSe Management App</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@600;800&display=swap');
+    :root{
+      --defop:0.69;
+      --defpad:24px;
+
+    } 
+    
+    * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+        /* font-family: 'Open Sans', sans-serif; */
+      
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(240, 248, 248);
+        /* background-color: aquamarine; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .login {
+        width: 556px;
+        height: 559px;
+        border: 1px solid white;
+        background-color: white;
+      }
+
+     
+      .Logo img {
+        width: 510px;
+        margin: 10px;
+      }
+      .text span {
+        display: block;
+        margin: 25px 20px 15px 20px;
+      }
+      .text span:first-child {
+        font-size: 36px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+      }
+      .text span:nth-child(2) {
+        font-size: 22px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 500;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+        gap: 20px;
+      }
+      .form label {
+        font-size: 24px;
+        
+      }
+      .form input {
+        width: 95%;
+        height: 56px;
+        border: 1px solid rgb(167, 166, 166) ;
+        font-size: 24px;
+        opacity: 0.79;
+        padding: 0px 25px 0px 10px;
+        outline: none;
+        /* margin: auto; */
+       
+        
+      }
+      /* .form label::first-letter{
+        color: red;
+      } */
+   .form label:before{
+        color: red;
+        content: "*";
+      }
+    
+      .form input:focus{
+        box-shadow: -1px 1px 8px 8px skyblue;
+        
+      }
+      
+      .form input::placeholder {
+        padding: 16px 95px 25px 15px;
+        font-size: 21px;
+        color: black;
+        opacity: var(--defop);
+       
+      }
+      h2 {
+        text-align: end;
+    color: blue;
+    margin-top: -48px;
+    font-weight: 100;
+      }
+     button {
+        width: 99%;
+        margin: 15px auto;
+        padding: 15px 25px;
+        font-size: 24px;
+        background-color: skyblue;
+        border-radius: 15px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        color: aqua;
+        background-color: green;
+      }
+      .form svg {
+        position: relative;
+        right: -475px;
+        top: -58px;
+      }
+
+      @media screen and (max-width:500px){
+        .login {
+        width: 300px;
+        height: 600px;
+        border: 1px solid white;
+        background-color: white;
+      }
+      .Logo img {
+        width: 280px;
+        margin: 10px;
+      }
+      .form input {
+        width: 75%;
+        height: 56px;
+        border: 1px solid rgb(167, 166, 166) ;
+        font-size: 24px;
+        opacity: 0.79;
+        padding: 0px 25px 0px 10px;
+        outline: none;
+        /* margin: auto; */
+       
+        
+      }
+      h2 {
+         text-align: end;
+         color: blue;
+         margin-top: -48px;
+         font-weight: 100;
+         font-size: 18px;
+      }
+      .form svg {
+        position: relative;
+        right: -255px;
+        top: -58px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hello World -->
+    <div class="container">
+      <div class="Logo">
+        <img
+          src="https://dev2.d315afujqf5ozj.amplifyapp.com/images/aifise-logo.png"
+          alt=""/>
+      </div>
+
+      <div class="login">
+        <div class="text">
+          <span>Welcome</span>
+          <span
+            >Please enter your login information to access your account</span
+          >
+        </div>
+        <form action="" class="form">
+          <label for=""> Email</label>
+          <!-- autofocus -->
+          <input
+            type="email"
+            placeholder="Email Address"
+            title="Username"
+            autofocus
+            required 
+          />
+          <label for=""> Password</label>
+          <input
+            type="password"
+            placeholder="Enter Your Password"
+            title="password"
+            autofocus
+            required
+            id="pass"
+          />
+          <!-- <button onclick="Password()"></button> -->
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 8C2 8 6.47715 3 12 3C17.5228 3 22 8 22 8"
+              stroke="#141B34"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M12 7C7.08671 7 3.43133 11.7818 2 14C3.43133 16.2182 7.08671 21 12 21C16.9133 21 20.5687 16.2182 22 14C20.5687 11.7818 16.9133 7 12 7Z"
+              stroke="#141B34"
+              stroke-width="1.5"
+            />
+            <path
+              d="M15 14C15 12.3431 13.6569 11 12 11C10.3431 11 9 12.3431 9 14C9 15.6569 10.3431 17 12 17C13.6569 17 15 15.6569 15 14Z"
+              stroke="#141B34"
+              stroke-width="1.5"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <h2>Forgot your Password?</h2>
+          <button type="submit" onclick="alert('sure')" >Login</button>
+          <!-- <a href="./Card5.html" target="_blank" ><button type="submit" onclick="windowOpen()" >Login</button></a> -->
+          <!-- <button onclick="windowClose()">   Close  </button> -->
+
+
+          <!-- <img id="image"> 
+          <button type="button" onclick="show()" id="btnID">ShowImage</button> -->
+          <!-- onclick="alert('sure')" -->
+
+         
+         
+        
+        </form>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

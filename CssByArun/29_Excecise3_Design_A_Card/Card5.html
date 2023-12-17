@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* display: flex;
+            gap: 200px; */
+        }
+       
+        .box{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(34, 70, 102);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 369px;
+            height: 599px;
+            background-color: white;
+            /* border: 1px solid yellow; */
+            border-radius: 5px;
+            padding: 5px;
+         
+           
+        }
+        .card img{
+            width: 100%;
+            height: 40%;
+            border-radius: 5px;
+            
+        }
+        .items span{
+              border: 1px solid blue;
+              display: inline-block;
+              margin: 10px;
+              padding: 6px 16px;
+              border-radius: 5px;
+              box-shadow: 0px 1px 10px 1px blue inset;
+           
+        }
+        .items span:nth-child(2){
+            margin-left: -8px;
+        }
+        h1{
+            margin: 5px;
+            text-align: center;
+        }
+        p{
+            margin: 10px;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: 400;
+            /* border: 1px solid white; */
+            word-break: break-all;
+
+        }
+        .button{
+            text-align: center;
+            
+        }
+        .button button{
+
+            padding: 10px 18px 10px 18px;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 10px 1px blue inset ;
+            color: blue;
+            opacity: 0.699;
+        }
+        a{
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid blue;
+            box-shadow:0px 1px 10px 1px blue inset ;
+            padding: 10px 5px;
+            
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            margin: 20px auto;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hello world -->
+    <div class="box">
+        <div class="card">
+            <img src="card.jpg" alt="">
+            <div class="items">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+            <h1>Lorem Heading Lupsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi expedita deleniti modi consectetur obcaecati</p>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+           <!-- <a href="">ReadMore</a> -->
+
+        </div>
+
+    </div>
+    <div class="box">
+        <div class="card">
+            <img src="card.jpg" alt="">
+            <div class="items">
+                <span>Nature</span>
+                <span>Lake</span>
+            </div>
+            <h1>Lorem Heading Lupsum</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi expedita deleniti modi consectetur obcaecati</p>
+            <div class="button">
+                <button>Read More</button>
+            </div>
+           <!-- <a href="">ReadMore</a> -->
+
+        </div>
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

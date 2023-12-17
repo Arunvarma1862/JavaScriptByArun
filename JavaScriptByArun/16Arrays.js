@@ -3,6 +3,7 @@ console.log('Arrays - collection of items');
 let marks_of_students = [95,85,42,65.2];
 console.log(marks_of_students)
 console.log(marks_of_students[2]);
+console.log(marks_of_students[5]);
 
 let items=[52,"hellooo", true, null, BigInt(5)];
 console.log(items)

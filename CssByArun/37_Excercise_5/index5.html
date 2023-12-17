@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            background-color: black;
+        }
+        header{
+         
+            position: sticky;
+            top: 0px;
+        }
+      
+     nav{
+            width: 100vw;
+            height: 63px;
+            border: 1px solid blue;
+            background-color: yellow;
+            margin: 5px auto;
+           
+           
+         }
+         .mainbox{
+            display: grid;
+            grid-template-columns:1fr 1fr ;
+            /* gap: 24px; */
+            justify-items: center;
+            background-color: blue;
+            margin: 10px;
+
+         }
+
+            .box{
+                width: 800px;
+                height: 600px; 
+                border: 1px solid blue;
+                background-color: aqua;
+                margin: 50px;
+            }
+       .text-box  p{
+            border: 1px solid blue;
+    padding: 25px;
+    margin: 25px auto;
+    width: 40vw;
+    color:  green;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 5px;
+        }
+        .round{
+            width: 63px;
+            border-radius: 64px;
+            height: 63px;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        footer{
+            border: 1px solid blue;
+            height: 100px;
+            background-color: bisque;
+            margin-bottom: 100px;
+        }
+
+         
+
+    </style>
+</head>
+<body>
+    <!-- Hello World -->
+<div class="container">
+      <header>
+        <nav>
+            Navigation Bar
+        </nav>
+      </header>
+
+      <main>
+        <div class="mainbox">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+    
+          </div>
+
+          <div class="text-box">
+            <p>Welcome to sigma Web development</p>
+          </div>
+          <div class="round">
+
+          </div>
+      </main>
+      <footer>
+
+      </footer>
+
+    </div>
+     
+      
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

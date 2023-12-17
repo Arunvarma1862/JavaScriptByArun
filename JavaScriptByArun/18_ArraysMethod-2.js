@@ -31,7 +31,7 @@ console.log(hj.reverse());
 let numb=[41,25,41,62,42,85,52];
 let deleteditems=numb.splice(2,3,1025,1026,1051,1024,5241);
 console.log(numb);
-console.log(deleteditems)
+console.log(deleteditems);
 
 // slice
 

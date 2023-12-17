@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>71_Inserting_Removing_elements</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box{
+            color: blue;
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Hello World -->
+    <div class="container blue red yellow orange">
+        <div class="box">Hello I am box</div>
+        <div class="box">Hello I am box</div>
+        <div class="box">Hello I am box</div>
+
+        <div hidden class="box1">Hidden bhai</div>
+        <div class="item" data-creted="kumar" >Heloo</div>
+    </div>
+    <script>
+
+        // let div=document.createElement('div')
+        // div.innerHTML='Hello world welcomes'
+        // div.setAttribute('class','created')
+        // document.querySelector('.container').append(div);
+
+        // let cont= document.querySelector('.container')
+        // cont.insertAdjacentHTML("beforebegin","<div>Hello world djwl</div>")
+
+        let data1=document.createElement('div');
+        data1.innerHTML='India is my country'
+        data1.setAttribute('class','india');
+        document.querySelector('.container').before(data1);
+
+        let data2= document.querySelector('.container');
+        let data3= document.querySelectorAll('.container');
+        console.log(data2);
+        console.log(data3,data2,data1, typeof data3, typeof data2 , typeof data1);
+        data2.insertAdjacentHTML("beforeend",'<div>Hello India boys  girls</div>')
+        
+    </script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

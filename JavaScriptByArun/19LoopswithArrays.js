@@ -42,7 +42,7 @@ num.forEach((element)=>{
 
 let words="Dhawan";
 console.log(Array.from(words));
-console.log(words)
+console.log("Words: "+words)
 
 
 // for of

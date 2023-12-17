@@ -1,97 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>7_form_input</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     hello world
 
     <h1>Form</h1>
 
     <form action="/script.phpp" method="post">
-        
-        <div>
-            <label for="userID">Name:</label>
-        <input type="text" name="username" id="userID" placeholder="userName", title="user" autofocus required  style="cursor: pointer;">
-        </div>
+      <div>
+        <label for="userID">Name:</label>
+        <input
+          type="text"
+          name="username"
+          id="userID"
+          placeholder="userName"
+          ,
+          title="user"
+          autofocus
+          required
+          style="cursor: pointer"
+          pattern="[A-Za-z]{3}"
+        />
+      </div>
 
-         <div>
-            <label for="sex">Male</label>
-            <input type="radio" name="Gender id="sexM" value="male">
-            <label for="sex">Female</label>
-            <input type="radio" name="Gender id="sexF" value="Female">
-         </div>
-         <div>
-            <input type="checkbox" id="subcscibe" name="sub" value="yes">
-            <label for="subcscibe">India</label>
-         </div>
-          <div>
-            <label for="comment">Message</label><br>
-            <textarea name="comm" id="comment" cols="30" rows="10">Comments here</textarea>
-          </div>
-          <div>
-            <select name="fruits" id="">
-                <option value="Apple">Apple</option>
-                <option value="orange">orange</option>
-                <option value="kiwii">kiwii</option>
-            </select>
-          </div>
-          <div>
-            <label for="MailiD">Email :-</label>
-            <input type="email" name="Email" id="MailiD" placeholder="Enter your email">
-          </div>
+      <div>
+        <label for="sex">Male</label>
+        <input type="radio" name="Gender id="sexM" value="male">
+        <label for="sex">Female</label>
+        <input type="radio" name="Gender id="sexF" value="Female">
+      </div>
+      <div>
+        <input type="checkbox" id="subcscibe" name="sub" value="yes" />
+        <label for="subcscibe">India</label>
+      </div>
+      <div>
+        <label for="comment">Message</label><br />
+        <textarea name="comm" id="comment" cols="30" rows="10">
+Comments here</textarea
+        >
+      </div>
+      <div>
+        <select name="fruits" id="">
+          <option value="Apple">Apple</option>
+          <option value="orange">orange</option>
+          <option value="kiwii">kiwii</option>
+        </select>
+      </div>
+      <div>
+        <label for="MailiD">Email :-</label>
+        <input
+          type="email"
+          name="Email"
+          id="MailiD"
+          placeholder="Enter your email"
+        />
+      </div>
 
-          <div>
-            <label for="pass">Password</label>
-            <input type="password" id="pass" name="Password" placeholder="Enter Password">
-          </div>
+      <div>
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          id="pass"
+          name="Password"
+          placeholder="Enter Password"
+        />
+      </div>
 
-          <div>
-            <label for="num">Phnne No: &nbsp;&nbsp;</label>
-            <input type="number" id="num" name="phone" placeholder="Enter Phone Number">
-          </div>
+      <div>
+        <label for="num">Phnne No: &nbsp;&nbsp;</label>
+        <input
+          type="number"
+          id="num"
+          name="phone"
+          placeholder="Enter Phone Number"
+        />
+      </div>
 
-          <div>
-            <label for="URLID"> URL </label>
-            <input type="url" name="URL" id="URLID">
-          </div>
+      <div>
+        <label for="URLID"> URL </label>
+        <input type="url" name="URL" id="URLID" />
+      </div>
 
-          <div>
-            <input type="time" >
-            <input type="month">
-            <input type="date">
-            <input type="datetime">
-            <input type="week">
-          </div>
-          <div>
-           
-            <input type="file" value="upload">
-          </div>
+      <div>
+        <input type="time" />
+        <input type="month" />
+        <input type="date" />
+        <input type="datetime" />
+        <input type="week" />
+      </div>
+      <div>
+        <input type="file" value="upload" />
+        <input type="file">
+        <input type="file">
+      </div>
 
-          <div>
-            <input type="color">
-            <br><br>
-            <input type="range" min="1" max="100">
-            <br><br>
-            <input type="hidden">
-          </div>
+      <div>
+        <input type="color" />
+        <br /><br />
+        <input type="range" min="1" max="100" />
+        <br /><br />
+        <input type="hidden" />
+      </div>
 
-  <div>
-    <button type="reset">Reset</button>
-    <button type="submit" value="Submit" onclick="alert('sure')">Submit</button>
+      <div>
+        <button type="reset" value="Reset">Reset</button>
+        <button type="submit" value="Submit" onclick="alert('sure')">
+          Submit
+        </button>
 
-    <input type="submit"  value="SignUp" onclick="alert('sure')" >
-    <input type="reset" value="Refresh">
-    <input type="reset" value="Salaar">  
-  </div>
-         
-       
+        <input type="submit" value="SignUp" onclick="alert('sure')" />
+        <input type="reset" value="Refresh" />
+        <input type="reset" value="Salaar" />
+      </div>
     </form>
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>

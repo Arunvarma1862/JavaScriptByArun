@@ -35,16 +35,16 @@
 
 
 // Map
-let arrr=[21,54,86,84,65];
-    let a=     arrr.map((value,index,array)=>{
-        // console.log(value,index,array)
-            return value +1;
-         })
-         console.log(a)
+// let arrr=[21,54,86,84,65];
+//     let a =     arrr.map((value,index,array)=>{
+//         // console.log(value,index,array)
+//             return value +1;
+//          })
+//          console.log(a, typeof a)
 
-         arrr.forEach((element)=>{
-            console.log(element)
-         })
+//          arrr.forEach((element)=>{
+//             console.log(element,typeof element)
+//          })
 
   // filter
   
@@ -69,6 +69,19 @@ let arrr=[21,54,86,84,65];
 
 // let h=num2.reduce(reduce);
 // console.log(h);
+
+let arr=[1,2,3,4,5,6];
+let newarr=[];
+// newarr=arr.map((value,index,array)=>{
+//         return value*2;
+// })
+    for(let i=0;i<arr.length;i++){
+           const l =arr[i]
+          newarr.push(l*2)
+    }  
+
+console.log(newarr)
+
 
   
 
