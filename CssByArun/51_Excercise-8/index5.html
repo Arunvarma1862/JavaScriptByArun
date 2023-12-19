@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner
+        {
+            width: 80vw;
+            height:85vh;
+            border: 1px solid blue;
+            background-color: aqua;
+            position: relative;
+
+            
+        }
+        .box{
+            width: 93px;
+            height: 93px;
+            border-radius: 65px;
+            border: 1px solid blue;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: ballbounceX 3s linear  infinite ,ballbounceY 1s ease-out  infinite alternate ;
+        }
+        @keyframes ballbounceX{
+            from{
+               left: 0%;
+            }
+            to{
+               left: 100%;
+            }
+        }
+        @keyframes ballbounceY{
+            from{
+                      bottom: 0%;
+            }
+            to{
+                   bottom: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

@@ -39,6 +39,13 @@ console.log("Hello World")
 // })
 
 
+
+
+
+
+
+
+
 function generateColor(){
      
     let letters="0123456789ABCDEF";
@@ -49,15 +56,25 @@ function generateColor(){
     }
     return color;
     
-}
+}   
 
+let but= document.getElementById('button');
 
-let e= document.getElementsByClassName("box");
+but.addEventListener('click',()=>{
+
+    // alert('hello')
+    // document.querySelector('.box').innerHTML="Box1"
+    let e= document.getElementsByClassName("box");
 
 for(let i=0;i<5;i++){
-     e[i].style.backgroundColor =generateColor();
-     console.log(e[i])
+e[i].style.backgroundColor =generateColor()
+console.log(e[i])
 }
+
+  //  e.querySelector('.box').style.backgroundColor="green"
+   
+
+})
 
 
 

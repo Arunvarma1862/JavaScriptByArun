@@ -27,12 +27,9 @@ let a=await fetch('https://jsonplaceholder.typicode.com/posts', {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
- 
-
     let data=   await a.text();
     // console.log(data);
     return data;
-    
   }
 
 async function main() {
