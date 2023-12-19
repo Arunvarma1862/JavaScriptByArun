@@ -13,7 +13,7 @@
       body {
         box-sizing: border-box;
         width: 100vw;
-       min-height: 100vh;
+        min-height: 100vh;
         background-color: black;
       }
       .container {
@@ -24,8 +24,8 @@
       }
       .box {
         width: 450px;
-        min-height: 1450px;
-        border: 5px solid  blue;
+        min-height: 1850px;
+        /* border: 5px solid blue; */
         background-color: white;
         position: relative;
       }
@@ -65,10 +65,10 @@
         font-size: 24px;
         margin: 20px;
       }
-      .but{
+      .but {
         position: relative;
       }
-   button {
+      button {
         width: 163px;
         height: 56px;
         border: 1px solid blue;
@@ -82,11 +82,11 @@
         left: 136px;
         font-size: 24px;
       }
-      a{
+      a {
         text-decoration: none;
         color: white;
       }
-      .image-2 img{
+      .image-2 img {
         width: 450px;
         height: 400px;
         position: relative;
@@ -94,7 +94,7 @@
       }
       .image-2 .box3 {
         width: 390px;
-        height: 303px;
+        height: 240px;
         border: 1px solid white;
         background-color: aqua;
         /* margin: auto; */
@@ -102,35 +102,74 @@
         z-index: 19;
         top: 1125px;
         left: 30px;
-       
       }
-      .box3 h1{
+      .box3 h1 {
         margin: 15px;
       }
-      .box3 ul li{
+      .box3 ul li {
         margin: 13px 19px 10px 68px;
-    /* text-align: center; */
-    font-size: 24px;
-      }
-      @media screen and (max-width:500px){
-        .image-1 .box2 {
-        width: 390px;
-        height: 403px;
-        position: absolute;
-        z-index: 19;
-        top: 325px;
-        left: 48px;
-      }
-      button {
-        position: absolute;
-        z-index: 20;
-        top: 298px;
-        left: 156px;
+        /* text-align: center; */
         font-size: 24px;
       }
-
+      .text {
+        position: relative;
       }
-     
+      .text p {
+        position: absolute;
+    top: 608px;
+    text-align: center;
+    margin: -23px 8px 10px 17px;
+    padding: 13px 13px 13px 8px;
+    font-size: 21px;
+      }
+      @media screen and (max-width: 500px) {
+        .box {
+          width: 450px;
+          min-height: 1450px;
+          border: 5px solid blue;
+          background-color: white;
+          position: relative;
+        }
+        .image-1 .box2 {
+          width: 350px;
+          height: 403px;
+          position: absolute;
+          z-index: 19;
+          top: 325px;
+          left: 74px;
+        }
+        button {
+          position: absolute;
+          z-index: 20;
+          top: 298px;
+          left: 166px;
+          font-size: 24px;
+        }
+        .image-2 .box3 {
+          width: 340px;
+          height: 213px;
+          border: 1px solid white;
+          background-color: aqua;
+          /* margin: auto; */
+          position: absolute;
+          z-index: 19;
+          top: 1125px;
+          left: 80px;
+        }
+        .box3 ul li {
+          margin: 13px 19px 10px 68px;
+          /* text-align: center; */
+          font-size: 16px;
+        }
+        .text p {
+        position: absolute;
+         top: 608px;
+    text-align: center;
+    margin: -53px 8px 10px 57px;
+    padding: 13px 13px 13px 8px;
+    font-size: 16px;
+      }
+      }
     </style>
   </head>
   <body>
@@ -155,23 +194,28 @@
           </div>
         </div>
         <div class="but">
-            <button><a href="https://www.youtube.com" target="_blank">Know More</a></button>
+          <button>
+            <a href="https://www.youtube.com" target="_blank">Know More</a>
+          </button>
         </div>
 
         <div class="image-2">
-            <img src="assets/32b580e56e60c6108bb945011520196d.jpg" alt="">
-           <div class="box3">
-              <h1>Why AIFISE Face Match Validator?</h1>
-              <ul>
-                <li>Enhanced security measures</li>
-                <li>Efficient Identify Verfication</li>
-                <li>Time-saving and Automation</li>
-              </ul>
-           </div>
-          
+          <img src="assets/32b580e56e60c6108bb945011520196d.jpg" alt="" />
+          <div class="box3">
+            <h1>Why AIFISE Face Match Validator?</h1>
+            <ul>
+              <li>Enhanced security measures</li>
+              <li>Efficient Identify Verfication</li>
+              <li>Time-saving and Automation</li>
+            </ul>
+          </div>
+          <div class="text">
+            <p>
+              To view a video demostration, Kindly vist our you tube channel
+            </p>
+          </div>
         </div>
       </div>
-   
     </div>
     <script src="script.js"></script>
   </body>
