@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      .container {
+        /* display: flex; */
+      }
+      .card {
+        width: 50%;
+        border: 1px solid blue;
+        margin: 25px;
+        background-color: black;
+        display: flex;
+        
+      
+      }
+      .image {
+        width: 50%; 
+        position: relative;
+      }
+
+      .image img{
+        border-radius: 20px;
+        margin: 5px;
+      }
+      .capsule {
+        position: absolute;
+        top: 117px;
+        left: 200px;
+        background-color: black;
+        padding: 3px;
+        color: white;
+      }
+      .text{
+        color: white;
+        margin-left: -237px;
+          
+      }
+      .text h1{
+        margin-top: 15px;
+        margin-bottom: 15px;  
+        font-size: 36px;
+      }
+      .text p{
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+            alt=""
+          />
+          <div class="capsule">31:56</div>
+        </div>
+        <div class="text">
+            <h1>Introduction to sigma development course #6</h1>
+            <p>codewithharry.760k views.3months ago </p>
+        </div>
+      </div>
+    </div>
+    <script src="script5.js"></script>
+  </body>
+</html>

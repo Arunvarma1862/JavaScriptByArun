@@ -46,12 +46,15 @@ function generate_color(){
     return  ` rgb(${var1} ,${var2}, ${var3})`
 }
 
-Array.from(a).forEach((e=>{
-    e.style.backgroundColor=generate_color();
-}))
-console.log(a)
 
 
+ let button =document.getElementById('btn');
+ button.addEventListener('click',()=>{
+    Array.from(a).forEach((e=>{
+        e.style.backgroundColor=generate_color();
+    }))
+    console.log(a)
+ })
 // let box=document.getElementsByClassName('box');
 // console.log(typeof box,box)
 // for(let boxes of box){

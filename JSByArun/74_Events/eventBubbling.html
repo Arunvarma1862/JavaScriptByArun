@@ -57,32 +57,45 @@
         document.querySelector('.container').addEventListener('click',()=>{
             alert("container was clicked")
         })
+
+
+
         document.getElementById('btn2').onclick =function(){
             alert('yes')
+            // document.querySelector('childcontainer').innerHTML="yellow";
         }
+
+        document.querySelector('.child').onclick=function(){
+            prompt('Hello')
+            
+        }
+
+
+
+
         function generate_color(){
     let var1= Math.ceil(0+ Math.random()*255);
     let var2= Math.ceil(0+ Math.random()*255);
     let var3= Math.ceil(0+ Math.random()*255);
     return  ` rgb(${var1} ,${var2}, ${var3})`
 }
-        // setInterval(()=>{
-        //     document.querySelector('.childcontainer').style.backgroundColor=generate_color();
-
-        //     },1000)
-
-        // let timerId=    setInterval(()=>{
-        //         alert('sure')
-        //     },3000)
-
-            // clearInterval(timerId)
-
-         let a=   setTimeout(()=>{
+        setInterval(()=>{
             document.querySelector('.childcontainer').style.backgroundColor=generate_color();
 
-            },5000)
+            },1000)
 
-            console.log(a)
+        let timerId=    setInterval(()=>{
+                alert('sure')
+            },3000)
+
+            clearInterval(timerId)
+
+        //  let a=   setTimeout(()=>{
+        //     document.querySelector('.childcontainer').style.backgroundColor=generate_color();
+
+        //     },5000)
+
+        //     console.log(a)
 
             
     </script>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .red{
+        background-color: blue;
+        color: yellow;
+    }
+</style>
+<body>
+    <div class="conatiner red">
+        <div class="box red blue">Hey I am a box</div>
+    </div>
+    <script>
+        let div= document.createElement('div');
+        div.setAttribute('class',"blue")
+        div.innerHTML="Hello World to welcoes you"
+        document.querySelector('.conatiner').append(div)
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+header nav { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: violet; */
+    padding: 32px 25px 23px 84px;
+    margin-top: 25px;
+}
+
+.logo img{
+    padding-left: 25px;
+    width: 296px;
+}
+
+
+.right ul {
+    display: flex;
+    gap: 55px;
+    font-size: 34px;
+    font-weight: 900;
+    cursor: pointer;
+}
+li svg{
+    padding-left: 25px;
+    width: 88px;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+li img{
+    width: 55px;
+}
+ main .middle{
+    display: flex;
+    row-gap: 25px;
+    flex-direction: column;
+    line-height: 1.5;
+    max-width: 80vw;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+ .p1{
+    font-size: 103px;
+    padding-top: 130px;
+}
+.middle p:nth-child(2){
+    /* background-color: blue; */
+    width: 64vw;
+    /* text-align: center; */
+}
+.p1 img{
+    width: 250px;
+    padding-left: 25px;
+}
+
+main p{
+    font-size: 60px;
+    padding-top: 5px;
+    text-align: center;
+}
+main button{
+    padding: 28px;
+    background-color: skyblue;
+    color: white;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    border:none;
+
+
+}
+.smalllogo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 65px;
+    margin-left: 516px;
+    font-size: 33px;
+    column-gap: 24px;
+}
+.smalllogo h1{
+    background-color: yellow;
+    padding: 15px;
+    border-radius: 70px;
+    border: 5px solid black;
+}
+.second{
+
+    /* background-color: blue; */
+    max-width: 60vw;
+    margin: auto;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    gap: 10px;
+    margin-top: 55px;
+}
+.item{
+    border: 1px solid white;
+    width: 555px;
+    height: 355px;
+    background-color: azure;
+    position: relative;
+
+}
+.item-first{
+    font-size: 45px;
+    /* position: absolute;
+    top: 61px;
+    left: 190px; */
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 500;
+}
+.item button{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+   button.btn-blue a{
+    position: absolute;
+    bottom: 50px;
+    left: 18px;
+    background-color: skyblue;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+button.btn-green a{
+    position: absolute;
+    bottom: 51px;
+    left: 286px;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:550px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+   
+
+    header nav { 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 36px 55px 97px 118px;
+        background-color: violet;
+        /* max-width: 40vw; */
+        /* margin: auto; */
+        position: absolute;
+        left: 584px;
+        gap: 132px;
+        border: 5px solid blue;
+    }
+    .logo img{
+        width: 20px;
+    }
+    .middle{
+        max-width: 54vw;
+        margin: auto;
+        background-color: blue;
+    }
+    main .middle{
+       /* max-width: 94vw;
+       margin: auto; */
+       /* background-color: blue; */
+    }
+    .middle p:nth-child(1){
+        font-size: 24px;
+    }
+    .middle p:nth-child(2){
+        font-size: 20px;
+    }
+    .right ul {
+        display: flex;
+        gap: 25px;
+        font-size: 14px;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    .logo img{
+        padding-left: 13px;
+        width: 296px;
+        margin-left: -438px ;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        max-width: 60vw;
+        margin: auto;
+        gap: 10px;
+        margin-top: 55px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        margin: auto;
+        gap: 10px;
+        margin-top: 55px;
+        flex-wrap: wrap;
+      justify-content: center;
+      align-content: flex-end;
+      place-content: center;
+      /* border: 1px solid blue; */
+      position: relative;
+      left: 480px;
+    }
+    
+}
+
+
+

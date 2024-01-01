@@ -27,9 +27,9 @@ let a=await fetch('https://jsonplaceholder.typicode.com/posts', {
     'Content-type': 'application/json; charset=UTF-8',
   },
 })
-    let data=   await a.text();
+    let dataa = await a.text();
     // console.log(data);
-    return data;
+    return dataa;
   }
 
 async function main() {
@@ -42,6 +42,9 @@ async function main() {
 }
 main()
 // 
+
+
+// One way with using then
 
 // console.log("loading modules");
 // console.log("Do someting else");

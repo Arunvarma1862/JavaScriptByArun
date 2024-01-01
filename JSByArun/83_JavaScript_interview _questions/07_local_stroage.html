@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button>Add Note</button>
+<div class="note"></div>
+    <script>
+        
+        // if(localStorage.getItem("name")){
+        //    a=localStorage.getItem("name")
+        //     document.write("Welcome"+ a)
+        // }
+        // else{
+        //     let a=prompt("Enter Name")
+        //     localStorage.setItem("name",a)
+        //     document.write("Welcome"+ a)
+        // }
+
+        function saveNoteToLocalStorage(note){
+            localStorage.setItem("Note",note)
+        }
+
+        let note=localStorage.getItem('Note');
+             if(note){
+               document.querySelector('.note').innerHTML=note;
+                }
+
+                    document.querySelector('button').addEventListener('click',()=>{
+                    let note=prompt("enter a note");
+                    saveNoteToLocalStorage(note)
+                    document.querySelector('.note').innerHTML=note;
+                })
+            
+        
+    </script>
+    
+</body>
+</html>

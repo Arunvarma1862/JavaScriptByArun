@@ -23,15 +23,31 @@ const loadscript= (src,callback)=>{
 loadscript("https://www.youtube.com",callback)
 
 
-const add=(a,b)=>{
+// const add=(a,b)=>{
+//     return a+b;
+// }
+// const divide=(a,b)=>{
+//     return a/b;
+// }
+// const calculate=(a,b,operation)=>{
+//     return operation(a,b);
+// }
+
+// console.log(calculate(4,6,add))
+// console.log(calculate(4,6,divide))
+
+
+
+const addd=(a,b)=>{
     return a+b;
 }
-const divide=(a,b)=>{
-    return a/b;
-}
-const calculate=(a,b,operation)=>{
-    return operation(a,b);
+
+const sub=(a,b)=>{
+    return a-b;
 }
 
-console.log(calculate(4,6,add))
-console.log(calculate(4,6,divide))
+const operations=(ope,a,b)=>{
+    return ope(a,b)
+}
+
+console.log(operations(addd,5,6))

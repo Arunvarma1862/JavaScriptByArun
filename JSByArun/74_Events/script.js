@@ -12,11 +12,15 @@ let button=document.getElementById('btn')
    
 
 // })
+function color(){
+    return "Green";
+}
 button.addEventListener('dblclick',()=>{
     
     document.querySelector('.box').innerHTML="You have clicked that change content button"
+    document.querySelector('.box').style.backgroundColor= color();
 
-})
+}) 
 // button.addEventListener('contextmenu',()=>{
      
 //     alert('Right clicked')
