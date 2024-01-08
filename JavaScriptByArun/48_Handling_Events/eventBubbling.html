@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBubbling</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+          
+            padding:44px;
+             margin: 24px;
+            background-color: blue;
+        }
+        .childcontainer{
+            padding:34px;
+            background-color: yellow;
+        }
+        .child{
+          
+          padding: 34px;
+          margin: 24px;
+            background-color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Hello World -->
+    <div class="container">
+        <div class="childcontainer">
+            <div class="child">
+               I am a child
+            </div>
+        </div>
+    </div>
+    <script>
+          
+        document.querySelector('.child').addEventListener('click',(e)=>{
+            alert('clicked child');
+            e.stopPropagation()
+            
+        });
+        document.querySelector('.childcontainer').addEventListener('click',()=>{
+            alert('clicked childcontainer')
+        });
+        document.querySelector('.container').addEventListener('click',()=>{
+            alert('clicked container')
+        });
+
+        const generateColor=()=>{
+
+            let val1=Math.ceil(0+Math.random()*255);
+            let val2=Math.ceil(0+Math.random()*255);
+            let val3=Math.ceil(0+Math.random()*255);
+            return  `rgb(${val1}, ${val2},${val3})`
+        }
+
+     let a=   setInterval(() => {
+            document.querySelector('.childcontainer').style.backgroundColor=generateColor()
+        }, 3000);
+        // clearInterval(a)
+
+    </script>
+    
+</body>
+</html>
