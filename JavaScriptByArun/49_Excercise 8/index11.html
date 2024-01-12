@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bulb{
+            width: 55px;
+            height: 50px;
+            border: 1px solid blue;
+            border-radius: 25px;
+        }
+        .bulbstop{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="conatiner">
+        <button onclick="alert('sure')">Reset</button>
+        <button id="btn">Submit</button>
+        <button id="btns">Refresh</button>
+        <button id="btnss">Final</button>
+
+    </div>
+        <!-- 2 -->
+    <h1>Bookmarks</h1>
+    <!-- <a href=""><button>Google</button></a>
+    <a href=""><button>Facebook</button></a>
+    <a href="https://www.youtube.com" target="_blank"><button>youTube</button></a> -->
+
+    <button id="google">Google</button>
+    <button>Facebook</button>
+    <button>youTube</button> 
+
+    <div class="bulb bulbstop">
+
+    </div>
+    <script>
+        // 1
+        let button =document.getElementById('btn');
+        button.onclick=function(){
+            alert('hello world');
+        }
+
+        let button2=document.getElementById('btns');
+        button2.addEventListener('click',()=>{
+            alert('hello')
+        })
+        let button3=document.getElementById('btnss');
+        let x=function(){
+            alert('heloooo')
+        }
+        button3.addEventListener('click',x)
+
+
+
+    </script>
+    <script src="script11.js"></script>
+    
+</body>
+</html>

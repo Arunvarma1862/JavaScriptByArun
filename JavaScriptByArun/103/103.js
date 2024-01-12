@@ -608,33 +608,150 @@ console.log('Hello World');
 
 
 
-const jokes = [
-  "Why did the tomato turn red? Because it saw the salad dressing!",
-  "Why did the scarecrow win an award? Because he was outstanding in his field!",
-  "Why did the bicycle fall over? Because it was two-tired!",
-  "Why was the math book sad? Because it had too many problems!",
-  "Why did the chicken cross the playground? To get to the other slide!",
-  "Why do seagulls fly over the sea? Because if they flew over the bay, they'd be bagels!",
-  "Why don't scientists trust atoms? Because they make up everything!",
-  "Why don't skeletons fight each other? They don't have the guts!",
-  "Why did the computer go to the doctor? Because it had a virus!",
-  "Why don't eggs tell jokes? Because they'd crack each other up!"
-];
-let num=jokes.length
-console.log(num);
+// const jokes = [
+//   "Why did the tomato turn red? Because it saw the salad dressing!",
+//   "Why did the scarecrow win an award? Because he was outstanding in his field!",
+//   "Why did the bicycle fall over? Because it was two-tired!",
+//   "Why was the math book sad? Because it had too many problems!",
+//   "Why did the chicken cross the playground? To get to the other slide!",
+//   "Why do seagulls fly over the sea? Because if they flew over the bay, they'd be bagels!",
+//   "Why don't scientists trust atoms? Because they make up everything!",
+//   "Why don't skeletons fight each other? They don't have the guts!",
+//   "Why did the computer go to the doctor? Because it had a virus!",
+//   "Why don't eggs tell jokes? Because they'd crack each other up!"
+// ];
+// let num=jokes.length
+// console.log(num);
 
-// let random=Math.floor(Math.random()*num+1)
-let random=Math.floor(Math.random()*(jokes.length-1))
-console.log(random);
+// // let random=Math.floor(Math.random()*num+1)
+// let random=Math.floor(Math.random()*(jokes.length-1))
+// console.log(random);
 
- console.log(jokes[random]);
- let a="virat"
- console.log(a[0]);
- console.log(a[1]);
- console.log(a.length);
+//  console.log(jokes[random]);
+//  let a="virat"
+//  console.log(a[0]);
+//  console.log(a[1]);
+//  console.log(a.length);
 
- let age=18;
- console.log(`the result\"s is \n ${age>=18?'drive':'not drive'}`);
+//  let age=18;
+//  console.log(`the result\"s is \n ${age>=18?'drive':'not drive'}`);
+
+
+// let names="Virat kohli"
+// console.log(names.length);
+// console.log(names.toLowerCase());
+// console.log(names.toUpperCase());
+// console.log(names.slice(2,4));
+// // console.log(names.slice(2));
+
+// let newName=names.replace('kohli',"sharma")
+// // console.log(newName);
+// let hii="hellooo"
+// let con= names.concat(' hello', " bye ",hii)
+// console.log(con);
+
+// let nm="   harry   "
+// console.log(nm.trim());
+// console.log(names[1]);
+// let van="Harry"
+// for(let i=0;i<van.length;i++){
+//     console.log(van[i]);
+    
+// }
+
+//1
+// console.log('harry\"'.length);
+// //2
+
+// let sentence='The fox jumps over the lazy dog';
+// let word= 'fox';
+// console.log(`the word ${word} ${sentence.includes(word) ?'is':'is not' } in the sentences`);
+// console.log(`the word ${word} ${sentence.startsWith(word) ?'is':'is not' } first word`);
+// console.log(sentence.endsWith('fox'));
+// console.log(sentence.startsWith('The'));
+// console.log(sentence.includes('the'));
+
+
+// //3
+// let names='VIRAT';
+// console.log(names.toLowerCase());
+// console.log(names.toUpperCase());
+
+// //4
+// let na='please give Rs1000';
+// console.log(na.slice(na.length-4));
+
+// //5
+// let nam="virat"
+// nam[3]='h'
+// console.log(nam);
+// console.log(n);
+
+// let arr=['apple','banana','orange']
+// console.log(arr);
+// let obj={
+//     1:'hello',
+//     2:"hii"
+// }
+// let arr2=[{
+//     1:'hello',
+//     2:"hii"
+// },{
+//     1:'hello',
+//     2:"hii"
+// }]
+// console.log(arr2[0]);
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+    
+// }
+
+let nums=[1,52,85,95];
+let b=nums.toString();
+console.log(nums);
+console.log(b);
+console.log(nums.join('and'));
+
+let num5=[1,52,12];
+let news = num5.pop();
+console.log(num5,news);
+  let news2=num5.push(566);
+  console.log(num5,news2);
+  let shi=num5.shift();
+  console.log(num5,shi);
+  let shii=num5.unshift(9666);
+  console.log(num5, shii);
+  
+  
+let dek=[1,52,412,632];
+delete dek[2]
+console.log(dek);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
  
  

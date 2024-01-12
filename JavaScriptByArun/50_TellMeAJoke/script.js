@@ -14,12 +14,21 @@ const jokes = [
    console.log(num);
    let button=document.getElementById('btn');
 
+   const generateColor=()=>{
+    let val1=Math.ceil(0+Math.random()*255)
+    let val2=Math.ceil(0+Math.random()*255)
+    let val3=Math.ceil(0+Math.random()*255)
+    return `rgb(${val1}, ${val2}, ${val3})`
+   }
+
 
 button.addEventListener('click',()=>{
      // let random=Math.floor(Math.random()*num+1)
        let random=Math.floor(Math.random()*(jokes.length-1))
-        console.log(random);
+       console.log(random);
        let joke=document.getElementById('joke');
+       joke.style.backgroundColor= generateColor();
+       joke.style.color='white'
        joke.innerHTML=  jokes[random] 
 })
 
