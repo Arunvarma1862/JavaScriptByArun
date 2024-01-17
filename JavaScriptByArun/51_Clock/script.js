@@ -11,23 +11,35 @@ button.addEventListener("click", () => {
 });
 
 function time(as){
-console.log(as);
+// console.log(as);
 
   let a = new Date();
-  let h = a.getHours();
-  let m = a.getMinutes();
-  let s = a.getSeconds();
-  let d = a.getDate();
+  let clock= document.getElementById('time');
+  // let h = a.getHours();
+  // let m = a.getMinutes();
+  // let s = a.getSeconds();
+  // let d = a.getDate();
 
-  let Hour = document.getElementById("hour");
-  let Min = document.getElementById("min");
-  let sec = document.getElementById("sec");
-  let date = document.getElementById("date");
+  // let Hour = document.getElementById("hour");
+  // let Min = document.getElementById("min");
+  // let sec = document.getElementById("sec");
+  // let date = document.getElementById("date");
 
-  Hour.innerHTML = h + "<b> Hr &nbsp;</b>";
-  Min.innerHTML = m + "<b> M &nbsp;</b>";
-  sec.innerHTML = s + "<b> Sec &nbsp;</b>";
-  date.innerHTML = d + "<b> th </b>";
+  // Hour.innerHTML = h + "<b> Hr &nbsp;</b>";
+  // Min.innerHTML = m + "<b> M &nbsp;</b>";
+  // sec.innerHTML = s + "<b> Sec &nbsp;</b>";
+  // date.innerHTML = d + "<b> th </b>";
+
+    clock.innerHTML=a;
+//   let options = {  
+//     weekday: "long", year: "numeric", month: "short",  
+//     day: "numeric", hour: "2-digit", minute: "2-digit"  
+//      };  
+
+// console.log(a.toLocaleTimeString("en-us", options));
+// clock.innerHTML=a.toLocaleDateString("en-us", options)
+
+
 
 }
 setInterval(time,1000,"hello")

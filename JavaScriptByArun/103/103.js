@@ -707,25 +707,191 @@ console.log('Hello World');
 // }
 
 let nums=[1,52,85,95];
-let b=nums.toString();
-console.log(nums);
-console.log(b);
-console.log(nums.join('and'));
+// let b=nums.toString();
+// console.log(nums);
+// console.log(b);
+// console.log(nums.join('and'));
 
-let num5=[1,52,12];
-let news = num5.pop();
-console.log(num5,news);
-  let news2=num5.push(566);
-  console.log(num5,news2);
-  let shi=num5.shift();
-  console.log(num5,shi);
-  let shii=num5.unshift(9666);
-  console.log(num5, shii);
+// let num5=[1,52,12];
+// let news = num5.pop();
+// console.log(num5,news);
+//   let news2=num5.push(566);
+//   console.log(num5,news2);
+//   let shi=num5.shift();
+//   console.log(num5,shi);
+//   let shii=num5.unshift(9666);
+//   console.log(num5, shii);
   
   
-let dek=[1,52,412,632];
-delete dek[2]
-console.log(dek);
+// let dek=[1,52,412,632];
+// delete dek[2]
+// console.log(dek);
+
+// let num=[1,5,3,40];
+// console.log(num.length);
+
+// delete num[0];
+// console.log(num);
+// console.log(num.length);
+
+
+// let num_More=[11,55,88,233];
+// let num_More2=[112,525,388,2233];
+// console.log(num.concat(num_More,num_More2));
+
+// const compare=(a,b)=>{
+//   return a-b;
+// }
+
+// let num=[1,11,5,3,40];
+// console.log(num.sort(compare));
+// console.log(num.reverse());
+
+
+// let num=[1,2,3,4,5];
+// let removeItems=num.splice(2,1,1212,1312);
+// console.log(num);
+// console.log(removeItems);
+
+// let newArray=num.slice(2,4);
+// console.log(newArray);
+
+let num=[1,52,32,85,85];
+// for(let i=0;i<num.length;i++){
+//     console.log(num[i]);
+    
+// }
+
+// num.forEach((value)=>{
+//     console.log(value);
+    
+// })
+
+
+// for(let key in num){
+//     console.log(key +" " +num[key]);
+    
+// }
+
+// for(let key of num){
+//     console.log(key);
+    
+// }
+
+// let names="Hello";
+// let a =Array.from(names);
+// console.log(a);
+
+
+
+// let  numss=[1,2,3,4,5];
+// numss.forEach((value,index,array)=>{
+//     console.log(value,index,array);
+    
+// })
+
+// let a= numss.map((value)=>{
+//     return value+1;
+// })
+// console.log(a);
+
+
+// let an=[41,52,62,1,2,3];
+// let j= an.filter((value)=>{
+//     return value >10;
+// })
+// console.log(j);
+
+// let arr3=[1,2,3,4,5];
+
+// const reduces=(h1,h2)=>{
+//     return h1+h2;
+// }
+// // let kl= arr3.reduce((a,b)=>{
+// //     return  a+b;
+// // })
+
+// let kl=arr3.reduce(reduces)
+// console.log(kl);
+
+//1
+
+ const prompt= require('prompt-sync')({sigint:true});
+// let numss=[1,2,5,6]
+// let a=prompt('enter array')
+// a=Number.parseInt(a);
+// numss.push(a);
+// console.log(numss);
+
+
+//2 
+
+// let numss=[1,2,5,3];
+// let a;
+
+// do
+// {
+//     a=prompt("enter array")
+//      a=Number.parseInt(a);
+//     numss.push(a);
+
+// }
+// while(a!=0)
+// console.log(numss);
+
+//3
+
+
+// let arr=[1,2,3,440,50];
+
+// let a=arr.filter((value)=>{
+//     return value%10==0;
+// })
+// console.log(a);
+
+//4
+
+// let arr=[1,2,3,4];
+// let a= arr.map((value)=>{
+//     return value * value;
+// })
+// console.log(a);
+
+
+//5
+
+
+// let arr=[1,2,3,4,5];
+// const fac=(h1,h2)=>{
+//     return  h1 * h2;
+// }
+
+// let n= arr.reduce(fac);
+// console.log(n);
+
+
+let arr=[1,2,3,4,5,6,7,8,9];
+
+let a= arr.reduce((a,b)=>{
+    return a * b;
+})
+console.log(a);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
