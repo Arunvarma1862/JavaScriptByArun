@@ -19,18 +19,6 @@ const randomdelay= ()=>{
 
 async function main() {
 
-    let t = setInterval(() => {
-      let last = document.body.getElementsByTagName("div");
-       console.log(last);
-      last = last[last.length - 1];
-        console.log(last)
-      if (last.innerHTML.endsWith("...")) {
-        last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
-      } else {
-        last.innerHTML = last.innerHTML + ".";
-      }
-    }, 100);
-
     let text = [
       "Intializing Hacking",
       "do somthing else",
@@ -42,9 +30,20 @@ async function main() {
 
     for (let item of text) {
       await additem(item);
-      console.log("1");
       
     }
+
+    let t = setInterval(() => {
+        let last = document.body.getElementsByTagName("div");
+         console.log(last);
+        last = last[last.length - 1];
+          console.log(last)
+        if (last.innerHTML.endsWith("...")) {
+          last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length - 3);
+        } else {
+          last.innerHTML = last.innerHTML + ".";
+        }
+      }, 100);
     await randomdelay();
     clearInterval(t);
   }

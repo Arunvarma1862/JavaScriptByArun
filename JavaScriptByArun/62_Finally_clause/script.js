@@ -1,8 +1,5 @@
 function hello(){
 
-
-
-
 try{
     let a=0;
     // console.log(program);

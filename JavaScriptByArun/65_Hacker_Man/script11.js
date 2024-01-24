@@ -10,6 +10,7 @@ const additem= async (item)=>{
 const randomdelay=()=>{
     return new Promise((resolve,reject)=>{
         timeout=Math.random()*6+1;
+        console.log(timeout);
         setTimeout(() => {
             resolve()
         }, timeout*1000);
@@ -17,12 +18,15 @@ const randomdelay=()=>{
 }
 async function main(){
 
+console.log('a');
+
 let t= setInterval(() => {
 
+    console.log('1');
     let last= document.getElementsByTagName('div');
-    console.log(last);
+    // console.log(last);
     last=last[last.length-1];
-    console.log(last);
+    // console.log(last);
     if(last.innerHTML.endsWith('...')){
    last.innerHTML=last.innerHTML.slice(0,last.innerHTML.length-3)
     }
@@ -30,11 +34,13 @@ let t= setInterval(() => {
         last.innerHTML=last.innerHTML+"."
     }
 }, 100);
+console.log('2');
 let text=["intalizing ","Hacking the username","username Hacked","username is shami","password is 123456","Done"]
-
+console.log('3');
 for(let key of text){
-    await additem(key)
+  await additem(key)
 }
+console.log('4');
 
   await randomdelay();
    clearInterval(t)
