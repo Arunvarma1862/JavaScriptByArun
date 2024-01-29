@@ -30,7 +30,7 @@ a.name="hack";
 console.log(a.name);
 
 
-let c=56
+let c=56;
 
 console.log(a instanceof Animal);
 console.log(a instanceof Rabbit);

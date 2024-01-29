@@ -6,6 +6,5 @@ p.then((value)=>{
     console.log(value.headers);
     return value.json()
 }).then((value)=>{
-    console.log(value);
-    
+    console.log(value); 
 })

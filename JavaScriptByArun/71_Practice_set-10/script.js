@@ -55,9 +55,9 @@ alert('the note is '+ n)
 
 
 let a=prompt("enter note");
-if(a){
+
     localStorage.setItem("note" ,a)
-}
+
 
 let c= confirm("do you want to clear ")
     

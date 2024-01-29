@@ -37,7 +37,7 @@ async function createTODO(item){
         body:JSON.stringify(item)
     }
 
-      let p= await fetch("https://jsonplaceholder.typicode.com/posts",options)
+      let p = await fetch("https://jsonplaceholder.typicode.com/posts",options)
       let response= await p.json();
       return response;
     
@@ -56,12 +56,10 @@ const main= async ()=>{
     body: 'bar',
     userId: 1,
   }
-   let json1=  await createTODO(todo)
+   let json1= await createTODO(todo)
    console.log(json1);
-   let json2=await getTODO(5);
+   let json2=  await getTODO(5);
    console.log(json2);
-   
-   
 
 }
 main()
