@@ -1,7 +1,7 @@
 let promise= new Promise((resolve,reject)=>{
     alert('hello');
     console.log('1');
-    // resolve(566)
+    resolve(566)
     // reject(6333)
     
 })
@@ -13,5 +13,9 @@ setTimeout(() => {
 }, 2000);
 console.log('4');
 console.log(promise);
+promise.then((value)=>{
+    console.log(value)
+})
 
+// Hello World
 
