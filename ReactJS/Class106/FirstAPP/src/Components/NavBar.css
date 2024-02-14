@@ -1,0 +1,18 @@
+body{
+    /* background-color: blue;
+     */
+}
+
+nav ul {
+    display: flex;
+}
+li{
+    list-style: none;
+}
+ul{
+    gap: 35px;
+}
+nav{
+    background-color: beige;
+    padding: 18px;
+}

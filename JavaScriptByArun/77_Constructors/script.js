@@ -4,8 +4,7 @@ class RailwayForm{
     constructor(givenName,trainno){
         console.log('constructor called ' + givenName+" "+ trainno);
         this.name=givenName;
-        this.trainno=trainno;
-        
+        this.trainno=trainno; 
     }
 
 submit(){
@@ -24,4 +23,14 @@ let ArunKumarform=new RailwayForm("ArunKumar",52362);
 Harryform.submit();
 ArunKumarform.submit();
 ArunKumarform.cancel()
+
+
+let a={
+    one:"hello",
+    two:function(){
+        return this.one
+    }
+}
+
+console.log(a.two())
 

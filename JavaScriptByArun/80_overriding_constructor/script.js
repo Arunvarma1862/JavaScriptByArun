@@ -1,7 +1,7 @@
 
 class Employee{
     constructor(name){
-        console.log(`${name} Constructor called`);
+        console.log(`${name} Constructor called1`);
         this.name=name 
     }
     login(){
@@ -19,14 +19,13 @@ class Employee{
 
 class Programmer extends Employee{
 
-    // constructor(args) {
-    //     super(args)
+    // constructor(...args) {
+    //     super(...args)
     // }
-    
 
     constructor(name){
         super(name)
-        console.log(`${name} Constructor called`);
+        console.log(`${name} Constructor called15`);
         
     }
 
@@ -35,7 +34,7 @@ class Programmer extends Employee{
     }
 
     requestleave(leaves){
-         super.requestleave(5);
+         super.requestleave(leaves);
          console.log('one extra');
          
         // alert(`take ${leaves+1} leaves`)

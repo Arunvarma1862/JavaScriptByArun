@@ -24,8 +24,8 @@
 //     console.log(a+b);
 // }
 
-// function calculator(a,b,sumcallback){
-//     sumcallback(a,b)
+// function calculator(a,b,callback){
+//     callback(a,b)
 // }
 
 // calculator(1,2,sum);
@@ -33,7 +33,6 @@
 
 // function hello (){
 //     console.log('hello');
-    
 // }
 // function goodmorning(callback){
 //     console.log('goodMorning'); 

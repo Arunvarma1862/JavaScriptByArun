@@ -16,22 +16,39 @@
 
 // Spread
 
-const arr=[1,6,3];
-// const obj={...arr}
-// console.log(obj);
+// const arr=[1,6,3];
+// // const obj={...arr}
+// // console.log(obj);
+// console.log({...arr})
+
+
+// function sun(a,b,c){
+//     return a+b+c
+// }
+
+// console.log(sun(...arr))
+
+
+// let obj2={
+//     name:"harry",
+//     company:"xyz",
+//     designation:"dev"
+// }
+// console.log({...obj2,name:"Arun"})
+
+
+
+// spread
+
+const arr=[1,3,6];
+let obj={...arr}
+console.log(obj)
 console.log({...arr})
 
 
-function sun(a,b,c){
-    return a+b+c
-}
-
-console.log(sun(...arr))
-
-
-let obj2={
+const ar={
     name:"harry",
-    company:"xyz",
-    designation:"dev"
+    des:"dev",
+    sal:52222
 }
-console.log({...obj2,name:"Arun"})
+console.log({...ar,name:"virat"})

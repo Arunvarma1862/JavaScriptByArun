@@ -8,7 +8,7 @@
 
 // const mul=(a,b)=>{
 //     // alert('the mul'+ (a*b))
-//     console.log('the mul'+ (a*b));
+//        console.log('the mul'+ (a*b));
 // }
 // setInterval(mul,2000,4,6);
 
@@ -30,15 +30,16 @@ console.log('1');
 console.log('2');
 async function time(){
     const timeout=2000;
-    await new Promise((resolve,reject)=>{
+    return await new Promise((resolve,reject)=>{
         setTimeout(() => {
             console.log('3');
-            resolve()  
+            resolve("hello")  
         }, timeout);
     })
 }
 
-time().then(()=>{
+time().then((value)=>{
+    console.log(value)
     console.log('4');
     console.log('5'); 
 })

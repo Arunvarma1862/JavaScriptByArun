@@ -4,12 +4,15 @@ const generateColor = () => {
   let val3 = Math.ceil(0 + Math.random() * 255);
   return `rgb(${val1}, ${val2}, ${val3})`;
 };
+
+
+
 let button = document.getElementById("btn");
 let color = document.querySelector(".conatiner");
 button.addEventListener("click", () => {
   color.style.backgroundColor = generateColor();
 });
-
+let a = new Date();
 function time(as){
 // console.log(as);
 
@@ -42,16 +45,15 @@ function time(as){
 
 
 }
-setInterval(time,1000,"hello")
+// setInterval(time,1000,"hello")
 
-// let time=document.querySelectorAll('.time');
-// console.log(time);
-// let arr=Array.from(time);
-// arr.forEach((e)=>{
-//     console.log(e);
+let times=document.querySelectorAll('.time')[0];
+console.log(times);
+let arr=Array.from(times);
 
-//     e.innerHTML = h + "<b> Hr &nbsp;</b>";
-//     e.innerHTML = m + "<b> M &nbsp;</b>";
-//     e.innerHTML = s + "<b> Sec &nbsp;</b>";
-//     e.innerHTML = d + "<b> th </b>";
-// })
+arr.forEach((e)=>{
+    console.log(e);
+
+    e.innerHTML = a + "<b> Hr &nbsp;</b>";
+ 
+})

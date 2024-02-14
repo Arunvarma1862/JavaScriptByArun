@@ -24,29 +24,54 @@
 // console.log(a.names);
 
 
-let a= {
-  names:"hello",
-  2:"hii",
-  run:()=>{
-    alert("self run")
+// let a= {
+//   names:"hello",
+//   2:"hii",
+//   run:()=>{
+//     alert("self run")
 
+//   }
+// }
+// console.log(a);
+
+// let p={
+//   run:()=>{
+//     alert('run');
+//   }
+// }
+
+// p.__proto__={
+//   names:"hiiiiii"
+// }
+// a.__proto__=p
+
+// a.run();
+// p.run()
+// console.log(a.names)
+
+//}
+let a={
+  names:"hello",
+  2:"hskk",
+  run:()=>{
+    alert('hello')
   }
 }
-console.log(a);
 
 let p={
   run:()=>{
-    alert('run');
+    alert('rjks')
   }
 }
 
 p.__proto__={
-  names:"hiiiiii"
+  names2:'hiii'
 }
 a.__proto__=p
-
 a.run();
-p.run()
-console.log(a.names)
+p.run();
+console.log(a.names2)
+
+
 
 

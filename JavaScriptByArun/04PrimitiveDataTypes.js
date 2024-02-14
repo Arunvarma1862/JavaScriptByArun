@@ -1,7 +1,7 @@
 console.log("primitive data types   null number symbol string boolean bigint undefined");
 
-let a=null;
-let b= 16;
+let a = null;
+let b=  16;
 let c= "ArunBabu";
 let d= Symbol("this is symbol");
 let e = true;
@@ -13,6 +13,7 @@ let h;    // undefined
 console.log(a,b,c,d,e,f,g);
 
 const items={
+
     name : "Arun",
     section : 1,
     isStudent : true,
@@ -21,10 +22,10 @@ const items={
 
 }
 
-console.log(items['name']);
-items['name']= "Virat";   // replace  in object
-items["marks"]=65;         // add in object 
-console.log(items)
+// console.log(items['name']);
+// items['name']= "Virat";   // replace  in object
+// items["marks"]=65;         // add in object 
+// console.log(items)
 
 
 const item= {
@@ -37,4 +38,22 @@ const item= {
     
   }
   
-    console.log(item["phNo"])
+    // console.log(item["phNo"])
+
+
+    const obj={
+      jdl:"hello",
+      2:"hii",
+      3:"hello",
+      4:{
+        23:"hjdbh"
+      }
+      ,
+      func: function(){
+         return this.jdl
+      }
+    }
+    console.log(obj.func())
+
+    
+   

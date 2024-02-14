@@ -1,6 +1,10 @@
 const changeBgBlue=()=>{
-    document.body.firstElementChild.style.background="blue"
+    setInterval(() => {
+        document.body.firstElementChild.style.backgroundColor="blue"
+    }, 1000);
+    
 }
+changeBgBlue()
 
 let b= document.body;
 console.log("first child is ", b.firstChild);

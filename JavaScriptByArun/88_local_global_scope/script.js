@@ -14,7 +14,7 @@ function main(){
     
 }
 
-// block , local or function and global scope
+// block and function are local scope and global scope
 
 main()
 console.log(k);

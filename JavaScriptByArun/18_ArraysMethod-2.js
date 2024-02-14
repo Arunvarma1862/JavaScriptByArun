@@ -1,7 +1,10 @@
 let num=[1,2,3,4,5,6];
+
+
 // delete
 console.log(num, num.length, typeof num);
 delete num[0];
+delete num[1]
 console.log(num, num.length, typeof num);
 
 
@@ -40,3 +43,6 @@ let sli=number.slice(2,5);
 console.log(sli);
  let slic=number.slice(2);
 console.log(slic);
+
+
+

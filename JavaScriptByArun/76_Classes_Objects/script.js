@@ -14,6 +14,7 @@ class RailwayForm{
 let formHarry= new RailwayForm()
 let formHarry2= new RailwayForm()
 let formArun= new RailwayForm()
+
     formHarry.fill("harry",12345);
     formHarry.submit()
 

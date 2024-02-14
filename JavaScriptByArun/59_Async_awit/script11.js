@@ -40,16 +40,11 @@
 
 
 
-
-
-
-
-
-
  async function hello(){
     return 5;   
  }
 
 hello().then((value)=>{
-    alert(value)
+    console.log(value)
+    // alert(value)
 })

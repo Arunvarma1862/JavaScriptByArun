@@ -1,4 +1,4 @@
-const prompt= require("prompt-sync")({sigint:true});
+// const prompt= require("prompt-sync")({sigint:true});
 
 /*let sum= 0;
 let i;
@@ -26,18 +26,24 @@ for (i=1; i<num; i++){
 console.log(mul);*/
 
 
-const name ={
-    p1 : "Arun",
-    p2 : "Virat",
-    p3 :"jadega",
-    p4: "gill",
-    p5: "rohot"
-}
+// const name ={
+//     p1 : "Arun",
+//     p2 : "Virat",
+//     p3 :"jadega",
+//     p4: "gill",
+//     p5: "rohot"
+// }
 
-for( key in name){
-    console.log(key +  " " +name[key]);
-}
+// for( key in names){
+//     console.log(key +  " " +names[key]);
+// }
 
-for ( let key of "Arun"){
-    console.log(key);
+// for ( let key of "Arun"){
+//     console.log(key);
+// }
+
+
+function add(a,b){
+    return a+b
 }
+console.log(add('2','6'))

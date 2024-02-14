@@ -32,6 +32,10 @@
 
 
 class Employee{
+
+    constructor(){
+        console.log("constuctor called")
+    }
     login(){
         console.log(`Employee login`);
         
@@ -48,11 +52,11 @@ class Employee{
 class programmer extends Employee {
 
     requestCoffee(x){
-        console.log(`request coffe ${x} `);
+        console.log(`request coffe ${x}`);
         
     }
     requestLeave(leaves){
-        super.requestLeave(5)
+        super.requestLeave(leaves)
         console.log('one extra');
         
     }

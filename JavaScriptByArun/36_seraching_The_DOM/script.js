@@ -11,7 +11,7 @@ let cards=document.querySelectorAll(".card-title")
 cards[0].style.color="blue";
 cards[1].style.color="red";
 cards[2].style.color="violet";
-console.log(cards)
+console.log(cards) 
 
 
 document.querySelector(".this").style.color="cyan"
@@ -22,3 +22,4 @@ console.log(document.body.getElementsByTagName("a"));
 console.log(document.querySelector(".card").getElementsByTagName("a"));
 
 console.log(document.getElementsByName("searching"))
+console.log(document.body.getElementsByClassName('.card-title'))

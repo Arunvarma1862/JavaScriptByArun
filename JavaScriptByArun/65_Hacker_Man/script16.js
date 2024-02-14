@@ -3,13 +3,16 @@
 let text=["intalizing ","Hacking the username","username Hacked","username is shami","password is 123456","Done"];
 
 
-const sleep=(seconds)=>{
+ const sleep= async(seconds)=>{
     return new Promise((resolve,reject)=>{
         setTimeout(() => {
             resolve(true)
         }, seconds*1000);
     })
 }
+
+let a=sleep();
+console.log(a)
 
 const additem= async(item)=>{
 
