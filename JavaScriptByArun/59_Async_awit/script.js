@@ -18,18 +18,20 @@ async function harry() {
   })
 
   //      delhiWether.then(alert);
-  //    bangaloreweher.then((value)=>{
+  //      bangaloreweher.then((value)=>{
   //         alert(value)
   //     })
 
   console.log('Fetching delhi whether');
   let delhi = await delhiWether;
   console.log('Fetched delhi whether'+ delhi);
+
   console.log('Fetching bangalore whether');
   let banga = await bangaloreweher;
   console.log('Fetched bangalore whether'+banga);
+
   let mumbai=await mumbaiweather;
-  return [delhi, banga,mumbai];
+  return [delhi, banga, mumbai];
 }
 
 const chery=  async ()=>{
@@ -38,16 +40,17 @@ const chery=  async ()=>{
 }
 
 async function main(){
+  
     console.log("Whetther report");
     let a= await harry();
+    console.log("wea " +a)
     let b=  await chery();
+    console.log(b)
+
     // a.then((value)=>{
     //     console.log("value "+value);
         
     // })
-    console.log("wea " +a)
-    console.log(b)
-    
 }
 
 main();
@@ -59,3 +62,13 @@ main();
 // hello().then((value)=>{
 //     alert(value)
 // })
+
+
+
+async function hello(){
+  return 5;
+}
+hello().then((value)=>{
+  console.log(value);
+  alert(value)
+})

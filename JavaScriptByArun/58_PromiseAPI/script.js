@@ -31,11 +31,11 @@ let p3= new Promise((resolve,reject)=>{
 
 //1 promise.all
 
-// let promise_all=Promise.all([p1,p2,p3])
-// promise_all.then((value)=>{
-//     console.log(value);
+let promise_all=Promise.all([p1,p2,p3])
+promise_all.then((value)=>{
+    console.log(value);
     
-// })
+})
 
 //2 promise.allsettled
 
@@ -48,11 +48,11 @@ let p3= new Promise((resolve,reject)=>{
 
 //3 Promise.race
 
-let promise_race=Promise.race([p1,p2,p3])
-promise_race.then((value)=>{
-    console.log(value);
+// let promise_race=Promise.race([p1,p2,p3])
+// promise_race.then((value)=>{
+//     console.log(value);
     
-})
+// })
 
 //4 Promise.any
 

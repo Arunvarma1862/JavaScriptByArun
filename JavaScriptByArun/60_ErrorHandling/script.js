@@ -2,14 +2,12 @@
 
 setTimeout(() => {
     console.log('hacking wifi');
-    
-    
 }, 1000);
 
 try{
     console.log(Hello);
 }catch(error){
-    console.log(error);
+    console.log("Error "+error);
     
 }
 try{
@@ -20,13 +18,15 @@ try{
 }
 
 catch(error){
-    console.log(error);
+    console.log("Error "+error);
     
 }
 setTimeout(() => {
     console.log('hacking password');
     
 }, 3000);
+
+
 setTimeout(() => {
     console.log('hacked All details');
     

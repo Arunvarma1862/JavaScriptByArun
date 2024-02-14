@@ -54,16 +54,27 @@
 // main(hello)
 
 
-function sum(a,b){
-    console.log(a+b);
+// function sum(a,b){
+//     console.log(a+b);
     
+// }
+
+// function calculater(a,b,callback){
+//     callback(a,b)
+// }
+// calculater(1,2,sum)
+
+
+
+function mul(a,b){
+    console.log(a*b)
 }
 
-function calculater(a,b,callback){
+function calculator(a,b,callback){
     callback(a,b)
 }
-calculater(1,2,sum)
 
+calculator(2,3,mul)
 
 
 

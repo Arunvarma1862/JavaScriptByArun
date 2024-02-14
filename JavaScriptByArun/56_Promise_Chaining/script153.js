@@ -1,4 +1,5 @@
 const loadscript=(src)=>{
+
     return new Promise((resolve,reject)=>{
        let script= document.createElement('script')
        script.src=src;

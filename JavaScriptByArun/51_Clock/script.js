@@ -5,14 +5,12 @@ const generateColor = () => {
   return `rgb(${val1}, ${val2}, ${val3})`;
 };
 
-
-
 let button = document.getElementById("btn");
-let color = document.querySelector(".conatiner");
+let color  = document.querySelector(".conatiner");
 button.addEventListener("click", () => {
   color.style.backgroundColor = generateColor();
 });
-let a = new Date();
+
 function time(as){
 // console.log(as);
 
@@ -33,27 +31,26 @@ function time(as){
   // sec.innerHTML = s + "<b> Sec &nbsp;</b>";
   // date.innerHTML = d + "<b> th </b>";
 
-    clock.innerHTML=a;
-//   let options = {  
-//     weekday: "long", year: "numeric", month: "short",  
-//     day: "numeric", hour: "2-digit", minute: "2-digit"  
-//      };  
+    // clock.innerHTML=a;
+  let options = {  
+    weekday: "long", year: "numeric", month: "short",  
+    day: "numeric", hour: "2-digit", minute: "2-digit"  
+     };  
 
-// console.log(a.toLocaleTimeString("en-us", options));
-// clock.innerHTML=a.toLocaleDateString("en-us", options)
-
-
+console.log(a.toLocaleTimeString("en-us", options));
+clock.innerHTML=a.toLocaleDateString("en-us", options)
 
 }
-// setInterval(time,1000,"hello")
 
-let times=document.querySelectorAll('.time')[0];
-console.log(times);
-let arr=Array.from(times);
+setInterval(time,1000,"hello")
 
-arr.forEach((e)=>{
-    console.log(e);
+// let times=document.querySelectorAll('.time')[0];
+// console.log(times);
+// let arr=Array.from(times);
 
-    e.innerHTML = a + "<b> Hr &nbsp;</b>";
+// arr.forEach((e)=>{
+//     console.log(e);
+
+//     e.innerHTML = a + "<b> Hr &nbsp;</b>";
  
-})
+//})

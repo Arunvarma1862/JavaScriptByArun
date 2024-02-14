@@ -1,4 +1,4 @@
-let p1= new Promise((resolve,reject)=>{
+let p1 = new Promise((resolve,reject)=>{
     setTimeout(() => {
         console.log('2 second of Hii');
         resolve("promise 1");
