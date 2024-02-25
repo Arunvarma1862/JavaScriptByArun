@@ -8,7 +8,40 @@
 </head>
 <body>
     Hello World
-    <script src="script.js"></script>
+    <h1>Pasword Generator</h1>
+    <div class="container">
+        <label for="pass">Password generator</label>
+       <input type="text"  id="pass" readonly>
+       <button id="btn">Genertaor Password</button>
+    </div>
+
+    <script>
+        const passwordCreate=(length)=>{
+            const charset="abcdefghijklmnopqrstuvwxyz1234560789!@#%&*()_+";
+            let create=""
+            for(let i=0;i < length;i++){
+                  const random=  Math.floor(Math.random()*charset.length);
+                create +=  charset.charAt(random)
+            }
+            return create;
+        }
+
+        const generatorPassword =()=>{
+            let pass= document.getElementById('pass');
+            if(pass){
+              const  newPassword= passwordCreate(5);
+              pass.value= newPassword
+            }
+            else{
+                console.log(" id not found")
+            }
+           
+        }
+
+        let but= document.getElementById('btn');
+         but.addEventListener('click',generatorPassword)
+    </script>
+    <!-- <script src="script.js"></script>-->
     
 </body>
 </html>

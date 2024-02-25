@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .container{
-          
             padding:44px;
              margin: 24px;
             background-color: blue;
@@ -17,10 +16,9 @@
             background-color: yellow;
         }
         .child{
-          
           padding: 34px;
           margin: 24px;
-            background-color: green;
+          background-color: green;
         }
 
 
@@ -39,8 +37,7 @@
           
         document.querySelector('.child').addEventListener('click',(e)=>{
             alert('clicked child');
-            e.stopPropagation()
-            
+            e.stopPropagation()   
         });
         document.querySelector('.childcontainer').addEventListener('click',()=>{
             alert('clicked childcontainer')
@@ -57,8 +54,8 @@
             return  `rgb(${val1}, ${val2},${val3})`
         }
 
-     let a=   setInterval(() => {
-            document.querySelector('.childcontainer').style.backgroundColor=generateColor()
+     let a = setInterval(() => {
+              document.querySelector('.childcontainer').style.backgroundColor=generateColor()
         }, 3000);
         // clearInterval(a)
 

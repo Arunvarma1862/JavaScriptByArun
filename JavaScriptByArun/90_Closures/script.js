@@ -50,28 +50,76 @@
 // let ka= revers()
 // ka()
 
-function hello() {
-  const a1 = () => {
-    let a = 1;
-    console.log(a);
+// function hello() {
+//   const a1 = () => {
+//     let a = 1;
+//     console.log(a);
 
-    const a2 = () => {
-      // let a=2;
-      console.log(a);
+//     const a2 = () => {
+//       // let a=2;
+//       console.log(a);
 
-      const a3 = () => {
-        // let a=3;
-        console.log(a);
-      };
-      a3();
-    };
+//       const a3 = () => {
+//         // let a=3;
+//         console.log(a);
+//       };
+//       a3();
+//     };
     
-    a2();
-  };
-  return a1;
+//     a2();
+//   };
+//   return a1;
+// }
+// let a = hello();
+// a();
+
+
+function hello(){
+  const a1=()=>{
+    let a=1;
+    console.log(a);
+    const a2=()=>{
+   //   let a=2;
+      console.log(a);
+      const a3=()=>{
+   //     let a=3;
+        console.log(a)
+      }
+      a3()
+    }
+    a2()
+  }
+  return a1()
 }
-let a = hello();
-a();
+
+hello();
+
+
+
+
+const helo =()=>{
+
+  const a=()=>{
+    let an=1;
+    console.log(an);
+    const b=()=>{
+      // let an=2
+      console.log(an);
+      const c=()=>{
+        // let an=3;
+        console.log(an)
+      }
+      c()
+    }
+   
+    b()
+    an=999
+  }
+  return a()
+}
+
+helo()
+
 
 
 

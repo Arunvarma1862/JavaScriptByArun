@@ -2,7 +2,6 @@ let k=10
 {
     var a=6;
     console.log(k);
-    
    
 }
 console.log(a);
@@ -19,6 +18,6 @@ function main(){
 main()
 console.log(k);
 
-console.log(b);
+// console.log(b);
 
 

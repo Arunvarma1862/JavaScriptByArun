@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .color{
+        background-color: blue;
+    }
+
+    .yellow{
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+
+   <div class="card red blue virat yellow">
+    Hello World
+   </div>
+
+   <script>
+    let a= document.querySelector('.card');
+    console.log(a.className)
+    console.log(a.classList.add('jadege'))
+    console.log(a.classList.remove('virat'))
+    console.log(a.classList.toggle('color'))
+    console.log(a.classList.toggle('yellow'))
+    console.log(a.classList.contains('red'))
+    console.log(a.classList.contains('blue'))
+   </script>
+    
+</body>
+
+</html>

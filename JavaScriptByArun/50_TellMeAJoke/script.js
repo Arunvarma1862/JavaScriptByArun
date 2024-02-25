@@ -29,6 +29,7 @@ button.addEventListener('click',()=>{
        let joke=document.getElementById('joke');
        joke.style.backgroundColor= generateColor();
        joke.style.color='white'
+       joke.style.fontSize="24px"
        joke.innerHTML=  jokes[random] 
 })
 

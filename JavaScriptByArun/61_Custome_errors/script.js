@@ -19,6 +19,7 @@ try{
     if(age>150){
         throw new ReferenceError('harry')
     }
+    console.log('hello')
 }
 catch(error){
     console.log(error.message);

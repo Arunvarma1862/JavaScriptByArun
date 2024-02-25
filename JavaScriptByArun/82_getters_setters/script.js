@@ -1,11 +1,13 @@
 
 
 class Animal{
+   
      constructor(name){
         this._name=name
      }
      fly(){
-        console.log('I am flying dude');
+   
+        console.log('I am flying dude '+ this._name);
      }
 
      get name(){
@@ -13,7 +15,7 @@ class Animal{
      }
 
      set name(newName){
-        this._name=newName
+        this._name=newName.toUpperCase()
      }
 }
 class Rabbit extends Animal{
@@ -28,7 +30,7 @@ a.fly()
 console.log(a.name);
 a.name="hack";
 console.log(a.name);
-
+a.fly()
 
 let c=56;
 

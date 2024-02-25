@@ -9,7 +9,6 @@
 
   <label for="passwordInput">Generated Password:</label>
   <input type="text" id="passwordInput" readonly>
-
   <button id="generatePasswordButton">Generate Password</button>
 
   <script>
@@ -27,6 +26,7 @@
 
     function setGeneratedPassword() {
       const passwordInput = document.getElementById("passwordInput");
+      console.log(document.getElementById("passwordInput"))
 
       if (passwordInput) {
         const newPassword = generatePassword(12); // Change the length as needed

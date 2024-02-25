@@ -6,11 +6,15 @@ class Animal{
     }
   walk(){
     console.log('Animal '+ this.name+ ' is walking');
+    console.log(Animal.cap())
     
   }
 
  static captialize(name){
     return name.charAt(0).toUpperCase() + name.substr(1,name.length)
+  }
+  static cap(){
+    return "hello"
   }
 }
 

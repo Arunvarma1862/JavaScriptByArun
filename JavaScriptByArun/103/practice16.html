@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button id="btn_1" >Turn on the light</button>
+
+<img id="myImage" src="dm4uz3-foekoe.gif" style="width:100px">
+
+<button  id="btn_2" >Turn off the light</button>
+
+<script>
+
+    let but= document.getElementById('btn_1');
+    but.addEventListener('click',()=>{
+        let image= document.getElementById('myImage');
+        image.src='download.jfif'
+    })
+
+    let but12= document.getElementById('btn_2');
+    but12.addEventListener('click',()=>{
+        let image= document.getElementById('myImage');
+        image.src='459-4593815_pic-bulboff-on-off-gif-hd-png-download.png'
+    })
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="card">
+        <p>hello</p>
+    </div>
+    <script>
+
+        let a= document.getElementById('card');
+        // a.insertAdjacentHTML('beforebegin',"<p>beforebegin</p>")
+        // a.insertAdjacentHTML('afterend',"<p>afterend</p>")
+        // a.insertAdjacentHTML('beforeend',"<p>beforeend</p>")
+        // a.insertAdjacentHTML('afterbegin',"<p>afterbegin</p>")
+
+        
+        let divElement= document.createElement('div')
+        divElement.className="alert"
+        divElement.innerHTML="indiaviratt";
+        a.insertAdjacentElement('beforebegin',divElement)
+
+
+        a.insertAdjacentText('beforebegin',"hello world")
+
+        // a.remove()
+
+
+    </script>
+    
+</body>
+</html>

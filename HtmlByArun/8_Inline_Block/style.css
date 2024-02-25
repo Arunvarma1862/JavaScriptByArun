@@ -1,6 +1,6 @@
 p{
     background-color: aquamarine;
-    /* display: inline */
+    display: inline-block
 }
 a{
     background-color: rgb(209, 218, 218);

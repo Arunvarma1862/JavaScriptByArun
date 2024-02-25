@@ -67,6 +67,7 @@ Access.addEventListener('click',(e)=>{
         Ta.innerHTML=`
         <h1>${a}</h1>
         `
+       
      }
      else{
         Ta.innerHTML=`
@@ -79,7 +80,7 @@ Access.addEventListener('click',(e)=>{
         }, 5000);
      }
 
-     Acc.value=""
+     Acc.value=" "
     
 
 })

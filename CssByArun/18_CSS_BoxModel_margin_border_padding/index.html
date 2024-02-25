@@ -25,16 +25,22 @@
               min-height: 80vh;
               /* box-sizing: border-box;  */
              
-              /* box sizing is padding + border +height/width  not include margin */
+             
+              /* box sizing border box is padding + border +height/width  not include margin */
         }
         /* margin collapse is collapse of box a and box b bottom margin which gives highest priority*/
         .box2{
               color: yellow;
               padding: 10px;
               margin: 25px;
-              border: 1px solid aliceblue;
+              border: 2px solid aliceblue;
               height: 200px;
-              box-sizing: border-box;
+
+
+              box-sizing: border-box;    
+              /* // 176 px */
+              box-sizing: content-box;  
+               /* //200px  */
               
         }
     </style>

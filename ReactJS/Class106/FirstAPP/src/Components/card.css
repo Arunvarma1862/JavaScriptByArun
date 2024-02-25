@@ -3,5 +3,10 @@
     height: 65vh;
     border: 1px solid blue;
     margin: 24px;
-    /* overflow: hidden; */
+     /* overflow: hidden; */
+
+}
+.card img{
+    width: 522px;
+    
 }

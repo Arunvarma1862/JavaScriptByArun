@@ -2,13 +2,12 @@
 
 // Destructuring
 
-// let [x,y,rest]=[1,2,3,4,5,6];
-// console.log(x ,y, ...rest);
+// let [x,y,...rest]=[1,2,3,4,5,6];
+// console.log(x,y,rest);
 
 // let arr=[3,5,6,8,9]
 // let [a,,,...rest]= arr
 // console.log(a,rest)
-
 
 // let {a,b}={a:1,b:2}
 // console.log(a,b)
@@ -40,15 +39,52 @@
 
 // spread
 
-const arr=[1,3,6];
-let obj={...arr}
-console.log(obj)
+// const arr=[1,3,6];
+
+// let obj={...arr}
+// console.log(obj)
+// console.log({...arr})
+
+
+// const ar={
+//     name:"harry",
+//     des:"dev",
+//     sal:52222
+// }
+// console.log({...ar,name:"virat"})
+
+
+// destrcuting
+
+// let [x,y,...rest]=[1,2,3,4,5,6];
+// console.log(x,y,rest)
+// let arr=[3,5,6,4,8];
+// let [a,b,,,...rest]=arr;
+// console.log(a,rest)
+
+
+// let {a,b}={a:1,b:2};
+// console.log(a,b)
+
+
+// spread
+
+let arr=[1,2,3];
+let a={...arr};
+console.log(a)
 console.log({...arr})
 
 
-const ar={
-    name:"harry",
-    des:"dev",
-    sal:52222
+let arrrr={
+    name:"virat",
+    des:"batsman",
+    sal:"522333"
 }
-console.log({...ar,name:"virat"})
+console.log({...arrrr, name:"jadhs"})
+
+let num=[1,2];
+const add=(a,b)=>{
+    return a+b
+}
+console.log(add(...num))
+

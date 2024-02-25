@@ -1,0 +1,12 @@
+.cards{
+  border: 1px solid blue;
+  max-width: 23vw;
+  /* margin: 20px; */
+  padding: 23px;
+}
+.conatiner{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}

@@ -32,10 +32,15 @@
     <!-- css specificity -!important (10000)-inlinecss (1000)- id selector (100) -class selector or attribute selector(10) or pseudu selector - element selector (1) - universal selector(0) -->
     Hello world
     <div>
-        <h1 style"color: "yellow" class="yellow cred cpurple" data-x="a" id="Id">CSS_specifity</h1>
-        <h1>hello1</h1>
+        <h1 style"color: "yellow" class="yellow cred cpurple" data-x="a" id="Id" data-game="mario"="">CSS_specifity</h1>
+        <h1 style="color: yellow;">hello1</h1>
     </div>
-    <script src="script.js"></script>
+    <script>
+        let a =document.querySelector('.yellow')
+        console.log(a.dataset)
+        console.log(a.dataset.game)
+    </script>
+    <!-- <script src="script.js"></script> -->
     
 </body>
 </html>

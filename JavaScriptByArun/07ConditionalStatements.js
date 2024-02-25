@@ -113,8 +113,8 @@ switch(items){
   case 'hello':
     console.log("yaaa");
     break;
-
-  case 'hii':
+     
+    case 'hii':
     console.log('haaa');
     break;
 

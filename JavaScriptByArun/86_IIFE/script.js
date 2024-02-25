@@ -1,11 +1,13 @@
 
 let a =()=>{
 
- return new Promise((resolve,reject)=>{
+ let promise= new Promise((resolve,reject)=>{
     setTimeout(() => {
         resolve(566)
     }, 4000);
+    
 })
+    return promise;
 }
 
 (async ()=>{

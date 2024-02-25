@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    Hello World
+    <div id="PasswordGenerator">
+        <label for="pass">Generate Password</label>
+        <input type="text" id="pass" name="Password" placeholder="generateKey" readonly>
+        <button id="buttons">GeneratePassword</button>
+
+    </div>
+    
+    <script>
+        const passwordGenerator=(length)=>{
+            const charset="abcdefghijklmnopqrstuvwxyz!@#^&*()_+123456789";
+          let password="";
+          for(let i=0;i<length;i++){
+          const random = Math.floor(Math.random()*charset.length)
+          password += charset.charAt(random)
+
+          }
+          return password;
+
+        }
+        const setPassword=()=>{
+            let pass= document.getElementById('pass');
+            if(pass){
+              const  newPassword= passwordGenerator(12);
+              pass.value= newPassword
+            }
+            else{
+                console.log(" id not found")
+            }
+        }
+
+        let but= document.getElementById("buttons");
+        but.addEventListener('click',setPassword)
+
+        
+    </script>
+</body>
+</html>

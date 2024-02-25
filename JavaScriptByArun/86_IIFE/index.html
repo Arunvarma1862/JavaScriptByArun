@@ -5,10 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>86_IIFE</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <script src="script1.js"></script>
+    <script src="script2.js"></script> -->
 </head>
 <body>
     Hello World
-    <script src="script.js"></script>
+    <script>
+
+        // not to pollute global object
+
+      (function (){
+        function add(a,b){
+        console.log(a+b)
+        }
+        add(1,35)
+      })()
+
+    //   (function add(a,b){
+    //     console.log(a*b)
+       
+    //   })(1,6)
+      
+         console.log(add);
+    //   console.log(something)
+
+    //  myFunc.greetFn()
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+    
     
 </body>
 </html>

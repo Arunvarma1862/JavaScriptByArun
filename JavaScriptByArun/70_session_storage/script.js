@@ -1,4 +1,5 @@
-sessionStorage.setItem('name',"helooo");
+sessionStorage.setItem('name',"Hello World");
+// sessionStorage.removeItem('name')
 
 window.onstorage=(e)=>{
     alert("changed")
@@ -28,8 +29,9 @@ window.onstorage=(e)=>{
 
 // // Storing a complex object in localStorage
 // localStorage.setItem('userData', JSON.stringify(userData));
+// console.log(JSON.stringify(userData))
 
 // // Retrieving and parsing the complex object from localStorage
 // let storedData = JSON.parse(localStorage.getItem('userData'));
 // console.log(storedData); 
-// // Output: { name: 'Alice', age: 25 }
+// Output: { name: 'Alice', age: 25 }

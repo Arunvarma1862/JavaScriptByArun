@@ -18,23 +18,23 @@ class Human {
    console.log(wizard.health);
 
 
-// class Employee{
-//     constructor(){
-//         console.log('Constructor called');
+class Employee{
+    constructor(){
+        console.log('Constructor called');
         
-//     }
-//     login(){
-//         alert(`Employee login`)
-//     }
+    }
+    login(){
+        alert(`Employee login`)
+    }
 
-//     logout(){
-//         alert(`Employee logout`)
-//     }
+    logout(){
+        alert(`Employee logout`)
+    }
 
-//     requestleave(leaves){
-//         alert(`take ${leaves} leaves`)
-//     }
-// }
+    requestleave(leaves){
+        alert(`take ${leaves} leaves`)
+    }
+}
 
 class Programmer extends Employee{
 
@@ -47,7 +47,7 @@ class Programmer extends Employee{
     }
 
     requestleave(leaves){
-         super.requestleave(5);
+         super.requestleave(leaves);
          console.log('one extra');
          
         // alert(`take ${leaves+1} leaves`)

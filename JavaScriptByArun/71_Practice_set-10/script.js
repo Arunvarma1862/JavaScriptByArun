@@ -3,17 +3,18 @@
 //1
 
 function hello(){
-let url= fetch('https://jsonplaceholder.typicode.com/posts')
+let url=  fetch('https://jsonplaceholder.typicode.com/posts')
 
 url.then((response)=>{
-    return response.json()
+    let a =  response.json()
+    return  a
 }).then((resp)=>{
     console.log(resp);
     ihtml="";
     for(item in resp){
-        console.log(resp[item]); 
+        // console.log(resp[item]); 
         // console.log(resp[item].id);
-
+      console.log(1)
         ihtml +=`
         <div class="card mx-4 my-2" style="width: 18rem;">
         <img src="https://www.shutterstock.com/image-photo/text-context-behind-torn-brown-260nw-1914725956.jpg" class="card-img-top" alt="...">
@@ -26,7 +27,9 @@ url.then((response)=>{
       </div> 
         
         `  
+        console.log(ihtml)
     } 
+
     let card=document.getElementById('cardContainer')
     card.innerHTML= ihtml
 })
@@ -50,20 +53,21 @@ button.addEventListener('click',()=>{
 
 
 
-let n= localStorage.getItem('note');
-alert('the note is '+ n)
+// let n= localStorage.getItem('note');
+// alert('the note is '+ n)
 
 
-let a=prompt("enter note");
+// let a=prompt("enter note");
 
-    localStorage.setItem("note" ,a)
+//     localStorage.setItem("note" ,a)
 
 
-let c= confirm("do you want to clear ")
+// let c= confirm("do you want to clear ")
     
-if(c){
-    localStorage.removeItem('note')
-}
+// if(c){
+//     localStorage.removeItem('note')
+//     localStorage.clear()
+// }
 
 
 

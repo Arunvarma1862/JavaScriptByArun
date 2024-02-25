@@ -8,7 +8,41 @@
 </head>
 <body>
     Hello World
-    <script src="script.js"></script>
+
+    <h1>Static Method</h1>
+
+    <div id="card">
+        
+
+    </div>
+    <button id="btn" >Click me</button>
+    <script>
+        class car{
+            constructor(name){
+                this.names=car.hello(name);
+                // this.names= name
+            }
+            static hello(name){
+                return  name.charAt(0).toUpperCase()+ name.substr(1,name.length)
+                // return "Hello " + name.names
+            }
+        }
+
+        let but = document.getElementById('btn');
+      
+        but.addEventListener('click',()=>{
+
+            let myCar= new car('bro')
+            console.log(myCar.names)
+            document.getElementById('card').innerHTML=car.hello(myCar.names)
+        })
+
+       
+    </script>
+
+       
+    <!-- <script src="script.js"></script> -->
+
     
 </body>
 </html>

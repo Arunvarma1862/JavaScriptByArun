@@ -7,8 +7,6 @@ class Animal{
     run(){
         alert(this.name+" run")
     }
-    
-
 }
 class monkey extends Animal{
     hide(){
@@ -25,3 +23,12 @@ a.run()
 ani.run()
 a.hide();
 a.eat()
+
+let ab= {
+    one:"hiiii",
+    two:function(){
+       return this.one
+    }
+    }
+
+    console.log(ab.two())

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class hello{
+
+            constructor(weapon) {
+                this.weapon= weapon;
+                this.wealth=100;
+                
+            }
+            reciveDamage(){
+                this.wealth=this.wealth-10
+            }
+
+        }
+
+        class main extends hello{
+
+            reciveDamage(){
+                this.wealth=this.wealth-5
+            }
+        }
+
+        let a= new main("staff");
+        console.log(a.wealth);
+        a.reciveDamage();
+        console.log(a.wealth)
+    </script>
+    
+</body>
+</html>

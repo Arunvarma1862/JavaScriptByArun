@@ -1,63 +1,63 @@
 // 1 and 2
 
-// class complex{
+class complex{
 
-//     constructor(real,imaginary){
-//         this.real=real;
-//         this.imaginary=imaginary
-//     }
+    constructor(real,imaginary){
+        this.real=real;
+        this.imaginary=imaginary
+    }
 
-//     add(num){
-//         this.real=this.real+num.real;
-//         this.imaginary=this.imaginary+num.imaginary
-//     }
-// }
-// let a= new complex(6,2);
-// let b= new complex(2,4)
-// console.log(a.real , a.imaginary);
-// a.add(b)
-// console.log(a.real , a.imaginary);
+    add(num){
+        this.real=this.real+num.real;
+        this.imaginary=this.imaginary+num.imaginary
+    }
+}
+let a= new complex(6,2);
+let b= new complex(2,4)
+console.log(a.real , a.imaginary);
+a.add(b)
+console.log(a.real , a.imaginary);
 
 
 // 3
 
-// class human{
-//     constructor(name){
-//         console.log('Constructor called');
-//         this.name=name   
-//     }
-//     eat(){
-//         console.log('eating');
+class human{
+    constructor(name){
+        console.log('Constructor called');
+        this.name=name   
+    }
+    eat(){
+        console.log('eating');
         
-//     }
-//     drink(){
-//         console.log('drinking');
+    }
+    drink(){
+        console.log('drinking');
         
-//     }
-// }
+    }
+}
 
-// class  student extends human{
+class  student extends human{
 
-//     drink(){
-//         console.log(this.name+' drink cool drink');
+    drink(){
+        console.log(this.name+' drink cool drink');
         
-//     }
-//     play(){
-//         super.eat()
-//         console.log('playing');    
-//     }
-// }
+    }
+    play(){
+        super.eat()
+        console.log('playing');    
+    }
+}
 
-// let hy= new student('Harry');
-// let h= new human('Aru');
-// hy.drink()
-// hy.play()
+let hy= new student('Harry');
+let h= new human('Aru');
+hy.drink()
+hy.play()
 
 
 // // 4
-// console.log(h instanceof student);
-// console.log(hy instanceof student);
-// console.log(h instanceof human);
+console.log(h instanceof student);
+console.log(hy instanceof student);
+console.log(h instanceof human);
 
 
 //5

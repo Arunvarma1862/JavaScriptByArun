@@ -1,11 +1,8 @@
+let a='hello'
 
-
-let a=10;
-function ax(){
-
+{
     
     console.log(a)
-   
 }
-ax()
 
+console.log(a)

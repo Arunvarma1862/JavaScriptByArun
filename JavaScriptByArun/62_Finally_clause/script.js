@@ -3,6 +3,9 @@ function hello(){
 try{
     let a=0;
     // console.log(program);
+    // throw new ReferenceError("hello")
+    // throw new SyntaxError('hiiii')
+    
     console.log('program');
     return  "hello"
     

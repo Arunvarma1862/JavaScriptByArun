@@ -8,7 +8,31 @@
 </head>
 <body>
     Hello world
-    <script src="script.js"></script>
+
+    <script>
+
+        // use closure for data privacy
+
+        // For Privacy purpose, add the varible
+        //  a inside the count function
+        function hello(){
+             let a=0;
+             function add(){
+                return a++;
+             }
+             return add;
+         }
+         const result= hello()
+ 
+         console.log(result())
+         console.log(result())
+         console.log(result())
+         let a=5;    // a is not accesible outside
+         console.log(result())
+     </script>
+
+    
+    <!-- <script src="script.js"></script> -->
     
 </body>
 </html>

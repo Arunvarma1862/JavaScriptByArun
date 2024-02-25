@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="card">
+        <div class="first">Hello</div>
+    </div>
+
+
+    <script>
+
+        let ele= document.createElement('div');
+        ele.className="alert";
+        ele.innerHTML="<p>hello</p>"
+
+        let a= document.getElementById('card')
+
+        a.append(ele)
+        a.prepend(ele)
+        a.before(ele)
+        a.after(ele)
+        a.replaceWith(ele)
+
+    </script>
+    
+</body>
+</html>

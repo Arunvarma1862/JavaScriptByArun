@@ -1,4 +1,4 @@
-setTimeout(() => {
+setInterval(() => {
     let time= document.getElementById('time')
     let date= new Date();
     time.innerHTML= date;

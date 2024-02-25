@@ -1,55 +1,56 @@
-// let a = {
-//   names2: "hello",
-//   2: "hii",
-//   run: () => {
-//     alert("self run");
-//   },
-// };
-// console.log(a);
+let a = {
+  names2: "hello",
+  2: "hii",
+  run: () => {
+    alert("self run");
+  },
+};
 
-// let p = {
-//   run: () => {
-//     alert("run");
-//   },
-// };
+console.log(a);
 
-
-// p.__proto__ = 
-// {
-//   names: "hiihhh",
-// };
-// a.__proto__ = p;
-
-// a.run();
-// console.log(a.names);
+let p = {
+  run: () => {
+    alert("run");
+  },
+};
 
 
-// let a= {
-//   names:"hello",
-//   2:"hii",
-//   run:()=>{
-//     alert("self run")
+p.__proto__ = 
+{
+  names: "hiihhh",
+};
+a.__proto__ = p;
 
-//   }
-// }
-// console.log(a);
+a.run();
+console.log(a.names);
 
-// let p={
-//   run:()=>{
-//     alert('run');
-//   }
-// }
 
-// p.__proto__={
-//   names:"hiiiiii"
-// }
-// a.__proto__=p
+let a= {
+  names:"hello",
+  2:"hii",
+  run:()=>{
+    alert("self run")
 
-// a.run();
-// p.run()
-// console.log(a.names)
+  }
+}
+console.log(a);
 
-//}
+let p={
+  run:()=>{
+    alert('run');
+  }
+}
+
+p.__proto__={
+  names:"hiiiiii"
+}
+a.__proto__=p
+
+a.run();
+p.run()
+console.log(a.names)
+
+
 let a={
   names:"hello",
   2:"hskk",
@@ -72,6 +73,13 @@ a.run();
 p.run();
 console.log(a.names2)
 
+const sum=(a,b)=>{
+  console.log(a+b)
+}
+const calculator=(a,b,callback)=>{
+  callback(a,b)
 
+}
 
+calculator(1,63,sum)
 
