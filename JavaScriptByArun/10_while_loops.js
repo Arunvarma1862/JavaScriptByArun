@@ -9,11 +9,23 @@ while(i<a){
     i++;
 }*/
 
-let x= prompt("enter number");
-x=Number.parseInt(x);
-let i=1;
+// let x= prompt("enter number");
+// x=Number.parseInt(x);
+// let i=1;
+// do{
+//     console.log(i);
+//     i++
+// }
+// while(i<x)
+
+
+let i=0;
+let n= prompt('enter number')
+n= Number.parseInt(n);
+
 do{
-    console.log(i);
-    i++
+    console.log(i)
+    i++;
 }
-while(i<x)
+while(i<n)
+

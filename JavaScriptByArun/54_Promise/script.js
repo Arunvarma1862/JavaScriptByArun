@@ -11,6 +11,7 @@ setTimeout(() => {
     console.log('3 seconds in Hii');
     
 }, 2000);
+
 console.log('4');
 console.log(promise);
 promise.then((value)=>{

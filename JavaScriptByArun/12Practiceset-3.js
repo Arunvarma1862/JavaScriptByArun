@@ -6,6 +6,7 @@ const obj={
     jadaeha:56
 }
 for( let i=0; i<Object.keys(obj).length;i++){
+    
     // console.log("key "+ Object.keys(obj)[i]+ " is "+ obj[Object.keys(obj)[i]]);
 }
 

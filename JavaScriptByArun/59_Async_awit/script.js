@@ -70,5 +70,5 @@ async function hello(){
 }
 hello().then((value)=>{
   console.log(value);
-  alert(value)
+  alert(value);
 })

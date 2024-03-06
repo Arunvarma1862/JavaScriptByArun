@@ -8,7 +8,7 @@
     <style>
         .container{
             padding:44px;
-             margin: 24px;
+            margin: 24px;
             background-color: blue;
         }
         .childcontainer{
@@ -39,8 +39,9 @@
             alert('clicked child');
             e.stopPropagation()   
         });
-        document.querySelector('.childcontainer').addEventListener('click',()=>{
+        document.querySelector('.childcontainer').addEventListener('click',(e)=>{
             alert('clicked childcontainer')
+            e.stopPropagation()
         });
         document.querySelector('.container').addEventListener('click',()=>{
             alert('clicked container')

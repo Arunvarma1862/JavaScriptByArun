@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let cn=5;
+        let i;
+        let reach=0;
+
+        while(i!=cn){
+            if(reach>0 && reach <=3){
+                console.log("try again")
+            }
+
+            i= prompt("enter number")
+
+            if(reach==3){
+                console.log('attemps completed')
+                 break
+            }
+            reach++;
+
+        }
+
+        if(i==cn){
+            console.log('right number')
+        }
+    </script>
+    
+</body>
+</html>

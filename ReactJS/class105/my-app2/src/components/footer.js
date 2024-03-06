@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Footer() {
+function Footer(props) {
   return (
     <div>
-        I am footer
+        I am footer 
+        
+        {props.copyrights}
       
     </div>
   )

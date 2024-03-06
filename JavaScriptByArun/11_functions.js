@@ -97,4 +97,11 @@ function message(){
   console.log("one plus Average of the numbers ",onplusAverage(b,c));
   console.log("one plus Average of the numbers ",onplusAverage(c,a));
   console.log(sum(5,6));
+
+
+  let ab= function(){
+    console.log('hii')
+  }
+
+  ab()
   

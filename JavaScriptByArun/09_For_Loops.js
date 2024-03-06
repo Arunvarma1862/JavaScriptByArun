@@ -1,5 +1,8 @@
 // const prompt= require("prompt-sync")({sigint:true});
 
+// for in works for string, array and object
+// for of works for  string and array
+
 /*let sum= 0;
 let i;
 let n= prompt('Enter Number');
@@ -34,11 +37,11 @@ console.log(mul);*/
 //     p5: "rohot"
 // }
 
-// for( key in names){
+// for( key in names){      for object
 //     console.log(key +  " " +names[key]);
 // }
 
-// for ( let key of "Arun"){
+// for ( let key of "Arun"){     for array and string
 //     console.log(key);
 // }
 

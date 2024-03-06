@@ -3,10 +3,10 @@ console.log("primitive data types   null number symbol string boolean bigint und
 let a = null;
 let b=  16;
 let c= "ArunBabu";
-let d= Symbol("this is symbol");
+let d=  Symbol("this is symbol");
 let e = true;
-let f= BigInt(16)+ BigInt(25);
-let g= undefined;
+let f=  BigInt(16)+ BigInt(25);
+let g=  undefined;
 let h;    // undefined
 
 
@@ -23,7 +23,7 @@ const items={
 }
 
 // console.log(items['name']);
-// items['name']= "Virat";   // replace  in object
+// items['name']= "Virat";    // replace  in object
 // items["marks"]=65;         // add in object 
 // console.log(items)
 
@@ -54,6 +54,24 @@ const item= {
       }
     }
     console.log(obj.func())
+
+
+    const ites={
+
+      a:"hekl",
+      h:"dnc",
+      gh:"nsd",
+      mn:{
+        nb:"jscn"
+      },
+      func:function(){
+        return this.mn
+      }
+
+    }
+
+    console.log(ites.func());
+    console.log(ites.mn.nb)
 
     
    

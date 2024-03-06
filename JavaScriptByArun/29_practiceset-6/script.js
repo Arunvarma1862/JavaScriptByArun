@@ -33,8 +33,6 @@
 // const canDrive= (age)=>{
 //      return  age>4?true:false;
 // }
-
-
 //     let age=prompt("Enter Age");
 //     age= Number.parseInt(age);
 //     alert(typeof age);
@@ -44,8 +42,6 @@
 //     }
 
 // Q5
-
-
     
     let color= prompt("enter the color");
     document.body.style.background=color;

@@ -4,17 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './components/card'
   
-// const Todo=({todod})=>{
-//   return (
-//     <>
-//     <div className="conatiner"  style={{border:"1px solid blue"}}>
-//     <div className="todo">{todod.title}</div>
-//     <div className="todo">{todod.desc}</div>
-//     </div>
-//     </>
+const Todo=({todod})=>{
+  return (
+    <>
+    <div className="conatiner"  style={{border:"1px solid blue"}}>
+    <div className="todo">{todod.title}</div>
+    <div className="todo">{todod.desc}</div>
+    </div>
+    </>
    
-//   )
-// }
+  )
+}
 
 function App() {
   const [count, setCount] = useState(52)
@@ -82,8 +82,8 @@ const color=()=>{
       </div>
       <h1>Vite + React</h1>
      
-     {/* <Todo/> */}
-      {todos.map((todod, i)=>{
+     <Todo title=todos/>
+      {/* {todos.map((todod, i)=>{
       //  return  <Todo key={i} todod={todoe}/>
 
       return (
@@ -92,7 +92,7 @@ const color=()=>{
         <div className="todo">{todod.desc}</div>
         </div>
       )
-      })}
+      })} */}
       
       {/* {showbtn?<button>Show me True</button>:<button>Show me false</button>} */}
       {showbtn && <button>Show me when i click</button>}

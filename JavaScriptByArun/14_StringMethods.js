@@ -1,11 +1,11 @@
-/*let item ="Virat Babu";
+let item ="Virat Babu";
 let Name="Arun\"";
 
 
 console.log(item.length);    // item.length is a property
 console.log(Name.length);
 
-console.log(item.toUpperCase());   // is acfuction 
+console.log(item.toUpperCase());   // is a function 
 console.log(item.toLowerCase());
 console.log(item.slice(2,4));
 console.log(item.slice(2));
@@ -32,16 +32,16 @@ console.log(person2);
 let person3="varun";
 console.log(person3.replace("ar","kl"));
 console.log(person3);
-console.log(person3[4]);*/
+console.log(person3[4]);
 
-// let a="Hello";
-//  let m= a.charAt(2);
-//  console.log(m);
-//  console.log(a[2]);
+ let a="Hello";
+ let m= a.charAt(2);
+ console.log(m);
+ console.log(a[2]);
 
-// function areEqualCaseInsensitive(str1, str2) {
-//   return str1.toUpperCase() == str2.toUpperCase();
-// }
-// console.log(areEqualCaseInsensitive("i","I"))
+function areEqualCaseInsensitive(str1, str2) {
+  return str1.toUpperCase() == str2.toUpperCase();
+}
+console.log(areEqualCaseInsensitive("i","I"))
 
 

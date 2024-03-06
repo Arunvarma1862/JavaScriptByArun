@@ -10,7 +10,7 @@ firstcard.style.backgroundColor="violet"
 let cards=document.querySelectorAll(".card-title")
 cards[0].style.color="blue";
 cards[1].style.color="red";
-cards[2].style.color="violet";
+cards[2].style.color="green";
 console.log(cards) 
 
 

@@ -29,6 +29,11 @@
 //  }
 
 
+
+
+
+
+
 // for loop
  let num=[11,22,32,49,53];
 for(i=0;i<num.length;i++){

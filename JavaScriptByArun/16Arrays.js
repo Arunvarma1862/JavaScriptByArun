@@ -1,5 +1,7 @@
 console.log('Arrays - collection of items');
 
+// Arrays are objects 
+
 let marks_of_students = [95,85,42,65.2];
 console.log(marks_of_students)
 console.log(marks_of_students[2]);

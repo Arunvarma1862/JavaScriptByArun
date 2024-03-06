@@ -24,3 +24,7 @@ console.log(k, num)
 //unshift
 let o= num.unshift(68);
 console.log(o,num)
+
+let del=[1,2,3,4,5];
+delete del[1]
+console.log(del)

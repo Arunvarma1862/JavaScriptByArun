@@ -117,20 +117,31 @@
 
 
 
-let arr=[11,22,33,44,55];
-let newarr=[];
+// let arr=[11,22,33,44,55];
+// let newarr=[];
 
 // newarr= arr.map((value,index,array)=>{
 //   return value*2;
 // })
 
-for(i=0;i<arr.length;i++){
-  const l= arr[i]
-  newarr.push(l*2)
+// for(i=0;i<arr.length;i++){
+//   const l= arr[i]
+//   newarr.push(l*2)
+// }
+
+// console.log(newarr)
+
+
+
+
+
+let arr=[1,2,3,4,5];
+// let arr="virat";
+// let arr={
+//   name:"virat",
+//   des:"batsman"
+// }
+for(let key of arr){
+  console.log(key )
 }
-
-console.log(newarr)
-
-
-  
 

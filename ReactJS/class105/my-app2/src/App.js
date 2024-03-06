@@ -12,7 +12,9 @@ function App() {
       <Navbar logoText='codewithharry'/>
     <div className="value"> {value}</div>
     <button onClick={()=>{setfirst(value+1)}}>Click me</button>
-    <Footer/>
+    <Footer  copyrights='@copy'/>
+
+    
     </div>
   );
 }

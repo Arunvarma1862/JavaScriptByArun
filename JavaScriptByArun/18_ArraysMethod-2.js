@@ -9,7 +9,7 @@ console.log(num, num.length, typeof num);
 
 
 // concat
-let N1= [1,85,74,5,6,5];
+let N1= [ 1,85,74,5,6,5];
 let N2= [ 5,85,74,62,74];
 let N3= [ 5,85,74,62,74,85];
 console.log(N1.concat(N2,N3));
@@ -43,6 +43,21 @@ let sli=number.slice(2,5);
 console.log(sli);
  let slic=number.slice(2);
 console.log(slic);
+
+
+// splice
+
+let var1= [1,2,3,4,5];
+let vardel= var1.splice(1,2,111,1112);
+console.log(var1);
+console.log(vardel);
+
+//slice
+
+let var2=[1,2,3,4,5];
+let var2del=var2.slice(2);
+console.log(var2)
+console.log(var2del)
 
 
 

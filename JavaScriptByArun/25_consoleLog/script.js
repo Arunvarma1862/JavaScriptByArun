@@ -7,9 +7,9 @@ console.assert("err "==true);
 
 
 console.time("forLoop");
+
 for(let i=0; i<5;i++){
-    console.log(225);
-   
+    console.log(225); 
 }
 console.timeEnd("forLoop");
 
