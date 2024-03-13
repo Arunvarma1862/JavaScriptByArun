@@ -35,3 +35,13 @@ window.onstorage=(e)=>{
 // let storedData = JSON.parse(localStorage.getItem('userData'));
 // console.log(storedData); 
 // Output: { name: 'Alice', age: 25 }
+
+
+let user= {
+    1:"hello",
+    2:"hiii"
+}
+
+localStorage.setItem('user',JSON.stringify(user))
+
+JSON.parse(localStorage.getItem('user'))

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Chai aur code</h1>
+    <button id="stop">stop</button>
+    <script>
+
+        const handler= function(){
+        console.log("hellom");
+       }
+
+       const changeText= function(){
+        document.querySelector('h1').innerHTML="js best series"
+       }
+       
+       setTimeout(handler,2000)
+        const t = setTimeout(changeText,5000)
+
+    //    let button = document.getElementById('stop');
+    //    button.addEventListener('click',()=>{
+    //     document.body.style.backgroundColor="blue"
+    //     clearTimeout(t)
+    //    })
+
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(t);
+        console.log('stopped')
+    })
+    </script>
+</body>
+</html>

@@ -12,18 +12,18 @@ let b= Number(score);
 // null => type is object => 0;
 // undefined => Nan
 
-// let isLoggedIn= 1;
+// let isLoggedIn= 0;
 // let booleanLoggedIn= Boolean(isLoggedIn);
 // console.log(booleanLoggedIn)
 
-let isLoggedIn= null;
-let booleanLoggedIn= Number(isLoggedIn);
-console.log(booleanLoggedIn)
+// let isLoggedIn= null;
+// let booleanLoggedIn= Number(isLoggedIn);
+// console.log(booleanLoggedIn)
 
 // let isLoggedIn= undefined;
 // let booleanLoggedIn= Number(isLoggedIn);
 // console.log(booleanLoggedIn)
 
-// let isLoggedIn= true;
-// let booleanLoggedIn= Number(isLoggedIn);
-// console.log(booleanLoggedIn)
+let isLoggedIn= true;
+let booleanLoggedIn= Number(isLoggedIn);
+console.log(booleanLoggedIn)

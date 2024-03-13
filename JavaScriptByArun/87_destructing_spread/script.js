@@ -12,6 +12,14 @@
 // let {a,b}={a:1,b:2}
 // console.log(a,b)
 
+let item={
+    name:"hello@gmail.com",
+    email:"hk"
+}
+
+const {name:n}= item
+console.log(n)
+
 
 // Spread
 
@@ -40,7 +48,6 @@
 // spread
 
 // const arr=[1,3,6];
-
 // let obj={...arr}
 // console.log(obj)
 // console.log({...arr})
@@ -69,22 +76,26 @@
 
 // spread
 
-let arr=[1,2,3];
-let a={...arr};
-console.log(a)
-console.log({...arr})
+// let arr=[1,2,3];
+// let a={...arr};
+// console.log(a)
+// console.log({...arr})
 
 
-let arrrr={
-    name:"virat",
-    des:"batsman",
-    sal:"522333"
-}
-console.log({...arrrr, name:"jadhs"})
+// let arrrr={
+//     name:"virat",
+//     des:"batsman",
+//     sal:"522333"
+// }
+// console.log({...arrrr, name:"jadhs"})
 
-let num=[1,2];
-const add=(a,b)=>{
-    return a+b
-}
-console.log(add(...num))
+// let num=[1,2];
+// const add=(a,b)=>{
+//     return a+b
+// }
+// console.log(add(...num))
 
+let a=[1,2,3];
+let b=[4,5,6];
+
+console.log([...a,...b])

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Change the background color</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+    <div class="pass">
+        <label for="pas">PasswordGenerator</label>
+        <input type="text" readonly id="Ipass">
+        <button class="but">submit</button>
+    </div>
+
+    <script>
+        // const generateColor=()=>{
+        //     let var1= Math.ceil(Math.random()*255+0)
+        //     let var2= Math.ceil(Math.random()*255+0)
+        //     let var3= Math.ceil(Math.random()*255+0)
+
+        //     return `rgb(${var1},${var2},${var3})`
+        // }
+
+        const generateColor=()=>{
+            let hex= "012345789ABCDEF";
+            let color="#";
+            for(let i=0;i<6;i++){
+                let random=Math.ceil(Math.random()*hex.length)
+                color += hex.charAt(random)
+            }
+            return color;
+        }
+
+        const changeColor=()=>{
+            document.body.style.backgroundColor=generateColor()
+        }
+
+        const randomNumber=(length)=>{
+            let gen="0123456789abcdefgh@#$%^&*()_+";
+            let genN="";
+            for(i=0;i<length;i++){
+                genN +=gen[Math.floor(Math.random()*gen.length)]
+            }
+            return genN;
+
+        }
+
+        let t;
+        document.querySelector('#start').addEventListener('click',()=>{
+            if(!t){
+                t= setInterval(changeColor,1000)
+                console.log("started");
+            }
+        })
+        document.querySelector('#stop').addEventListener('click',()=>{
+              clearInterval(t)
+              t=null
+              console.log('stopped')
+          
+        })
+        document.querySelector('.but').addEventListener('click',()=>{
+            let gennn= document.getElementById('Ipass')
+            gennn.value=randomNumber(16)
+        })
+
+        
+    </script>
+    
+</body>
+</html>

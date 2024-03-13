@@ -1,9 +1,7 @@
 
 
-// stack(primtive)  and heap(Non-primtive)
-
-
-// stack makes it copy  and heap changes original value,refre the value
+// stack(primtive) and heap(Non-primtive)
+// stack makes it copy of the value, and heap changes original value which refre 
 
 let a = "hello";
 let b= a;
