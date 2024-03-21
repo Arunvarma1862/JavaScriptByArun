@@ -2,7 +2,6 @@ function user(val1,val2,...num1){
     return num1;
 
 }
-
 console.log(user(200,5000,20000,666,333,3666));
 
 
@@ -14,7 +13,6 @@ const item={
 function hello(anyobject){
     return ` ${anyobject.username}  and the price is ${anyobject.price}`
 }
-
 console.log(hello(item));
 
 
@@ -22,8 +20,6 @@ const array=[200,550,666,333];
 function newArr(getarray){
       return getarray[2]
 }
-
-
 console.log(newArr(array))
 
 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conatiner{
+           width: 550px;
+           height: 235px;
+           border: 1px solid blue;
+           padding: 25px;
+           min-height: 25vh;
+           overflow: scroll;
+           margin: 10px;
+        }
+        .text{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="titles">
+        <h1>Fetch data</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima assumenda iusto sit laboriosam libero quidem explicabo illum, ipsa dolorem quaerat laudantium quam. Libero?</p>
+    </div>
+    <div class="conatiner">
+
+    </div>
+    <div class="text">
+    <label for="">Followers</label>
+    <input type="text" readonly id="in"><br>
+    <label for="">publicRepos</label>
+    <input type="text" readonly id="in2">
+    <br>
+    <button id="but">Click Me</button>
+    <button id="but2">Clear Me</button>
+</div>
+    <script>
+
+        let con= document.querySelector('.conatiner');
+        let buttons= document.getElementById('but');
+        let inputs= document.getElementById('in')
+
+        buttons.addEventListener('click',()=>{
+
+            const hello=async ()=>{
+                let a=  await fetch('https://api.github.com/users/hiteshchoudhary')
+                let response= await a.json();
+                inputs.value=response.followers
+                in2.value=response.public_repos
+                console.log(response)
+                const responseProperties = Object.entries(response).map(([key, value]) => `${key}: ${JSON.stringify(value)}`);
+                const formattedResponse = responseProperties.join('<br>');
+
+                con.innerHTML=`
+                  <div >${formattedResponse}</div>
+                  <div>${response.followers}</div>
+
+                `
+                // con.innerHTML = formattedResponse;
+            }
+            hello()
+        })
+
+        let buttons2= document.getElementById('but2');
+        buttons2.addEventListener(('click'),()=>{
+            con.innerHTML=` `
+            inputs.value=" "
+            in2.value=" "
+        })
+        
+       
+    </script>
+</body>
+</html>
